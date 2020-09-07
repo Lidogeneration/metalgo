@@ -20,6 +20,8 @@
       &-btn
         margin-top: 20px
         text-align: center
+        .mainBtn
+          display: none
       &-wrap
         &-item
           margin-bottom: 10px
@@ -98,7 +100,8 @@
             text-transform: uppercase
             margin: 0 5px 0 0
           img
-              width: 15px
+              width: 25%
+              height: auto
       &-item
         border-radius: 4px
         border: 1px solid $main_bg
@@ -107,7 +110,7 @@
         justify-content: space-between
         margin-bottom: 20px
         &-desc
-          flex-basis: 35%
+          flex-basis: 30%
           h4
             margin: 0 0 10px 0
             padding: 0
@@ -118,7 +121,7 @@
             padding: 0
             font-size: 20px
         &-place
-          flex-basis: 40%
+          flex-basis: 45%
           h4
             margin: 0 0 10px 0
             padding: 0
@@ -133,9 +136,9 @@
           &-date
             p
               display: inline
-              font-size: 12px
+              font-size: 10px
               &:not(:last-child)
-                margin-right: 10px
+                margin-right: 5px
         &-count
           flex-basis: 25%
           display: flex
@@ -227,6 +230,11 @@
         padding: 20px
         flex-basis: 100%
         background: rgba($main_bg, .2)
+        &-btn
+          .mainBtn
+            display: block
+            margin-left: auto
+            margin-right: auto
       &-result
         padding: 20px
         flex-basis: 100%
