@@ -34,7 +34,7 @@
           &-desc
             h4
               text-transform: uppercase
-              font-size: 18px
+              font-size: 14px
               font-weight: normal
           &-inputd
             display: flex
@@ -62,7 +62,7 @@
                 margin-left: auto
                 margin-right: 0
             ::placeholder
-              font-size: 14px
+              font-size: 11px
           &-input
             input
               border-radius: 4px
@@ -70,6 +70,8 @@
               background: none
               padding: 5px
               width: 100%
+            ::placeholder
+              font-size: 11px
     &-result
       flex-basis: 55%
       &-filter
@@ -78,12 +80,14 @@
           border-radius: 4px
           width: 100%
           padding: 5px
+          font-size: 12px
       .product-hit
         position: relative
         background: $main_rgb
         .mainBtn
           border: 2px solid $main_color
         .mainsearch-cont-result-item-count-price
+          padding: 20px 0 0 0 
           h4
             border-radius: 4px
             padding: 5px
@@ -96,12 +100,12 @@
           margin-bottom: 30px
           p
             padding: 0
-            font-size: 10px
+            font-size: 8px
             text-transform: uppercase
             margin: 0 5px 0 0
           img
-              width: 25%
-              height: auto
+            width: 15px
+            height: auto
       &-item
         border-radius: 4px
         border: 1px solid $main_bg
@@ -114,23 +118,23 @@
           h4
             margin: 0 0 10px 0
             padding: 0
-            font-size: 14px
+            font-size: 10px
             font-weight: normal
           p
             margin: 0 0 10px 0
             padding: 0
-            font-size: 20px
+            font-size: 18px
         &-place
           flex-basis: 45%
           h4
             margin: 0 0 10px 0
             padding: 0
-            font-size: 14px
+            font-size: 10px
             font-weight: normal
           p
             margin: 0 0 10px 0
             padding: 0
-            font-size: 20px
+            font-size: 18px
           &-stars
             margin-bottom: 10px
           &-date
@@ -147,6 +151,7 @@
           flex-direction: column
           text-align: center
           position: relative
+          padding: 5px
           &:after
             content: ''
             position: absolute
@@ -158,9 +163,12 @@
           &-price
             margin-top: auto
             p
+              font-size: 12px
               margin-top: auto
               padding: 0
               margin-bottom: 5px
+            h4
+              font-size: 18px
           &-btn
             margin-top: auto
             margin-bottom: 30px

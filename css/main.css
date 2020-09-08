@@ -62,7 +62,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-size: 16px;
-  color: #424242;
+  color: #000000;
   margin: 0;
   padding: 0;
   position: relative;
@@ -71,12 +71,12 @@ body {
 
 body a {
   text-decoration: none;
-  color: #424242;
+  color: #000000;
 }
 
 body a:hover {
   text-decoration: none;
-  color: #424242;
+  color: #000000;
 }
 
 button {
@@ -99,7 +99,7 @@ input, select {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: rgba(66, 66, 66, 0.7);
+  background: rgba(0, 0, 0, 0.7);
   z-index: 99;
   -webkit-transition: .4s;
   transition: .4s;
@@ -273,6 +273,8 @@ input, select {
   color: #ffffff;
   padding: 0;
   margin: 0;
+  font-size: 10px;
+  text-transform: uppercase;
 }
 
 .header__nav-cont-user-arrow img {
@@ -537,12 +539,13 @@ input, select {
 }
 
 .offer {
-  background: rgba(66, 66, 66, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   padding: 10px 0;
 }
 
 .offer__cont-title h3 {
   text-transform: uppercase;
+  font-size: 24px;
 }
 
 .offer__cont-input {
@@ -555,6 +558,26 @@ input, select {
   padding: 10px;
   border: none;
   padding-right: 60px;
+}
+
+.offer__cont-input ::-webkit-input-placeholder {
+  font-size: 13px;
+  color: #000000;
+}
+
+.offer__cont-input :-ms-input-placeholder {
+  font-size: 13px;
+  color: #000000;
+}
+
+.offer__cont-input ::-ms-input-placeholder {
+  font-size: 13px;
+  color: #000000;
+}
+
+.offer__cont-input ::placeholder {
+  font-size: 13px;
+  color: #000000;
 }
 
 .offer__cont-input label {
@@ -585,16 +608,16 @@ input, select {
     font-size: 16px;
   }
   .offer__cont-input ::-webkit-input-placeholder {
-    font-size: 14px;
+    font-size: 10px;
   }
   .offer__cont-input :-ms-input-placeholder {
-    font-size: 14px;
+    font-size: 10px;
   }
   .offer__cont-input ::-ms-input-placeholder {
-    font-size: 14px;
+    font-size: 10px;
   }
   .offer__cont-input ::placeholder {
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 
@@ -604,7 +627,7 @@ input, select {
 
 .mainsearch-mobile {
   display: none;
-  background: rgba(66, 66, 66, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   text-align: center;
   padding: 0 0 10px 0;
 }
@@ -649,7 +672,7 @@ input, select {
 
 .mainsearch-cont-settings-wrap-item select {
   border-radius: 4px;
-  border: 1px solid #424242;
+  border: 1px solid #000000;
   background: none;
   width: 100%;
   padding: 5px;
@@ -657,7 +680,7 @@ input, select {
 
 .mainsearch-cont-settings-wrap-item-desc h4 {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: normal;
 }
 
@@ -677,12 +700,12 @@ input, select {
           transform: translate(-50%, -50%);
   width: 5px;
   height: 2px;
-  background: #424242;
+  background: #000000;
 }
 
 .mainsearch-cont-settings-wrap-item-inputd input {
   border-radius: 4px;
-  border: 1px solid #424242;
+  border: 1px solid #000000;
   background: none;
   padding: 5px;
   width: 45%;
@@ -700,27 +723,43 @@ input, select {
 }
 
 .mainsearch-cont-settings-wrap-item-inputd ::-webkit-input-placeholder {
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .mainsearch-cont-settings-wrap-item-inputd :-ms-input-placeholder {
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .mainsearch-cont-settings-wrap-item-inputd ::-ms-input-placeholder {
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .mainsearch-cont-settings-wrap-item-inputd ::placeholder {
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .mainsearch-cont-settings-wrap-item-input input {
   border-radius: 4px;
-  border: 1px solid #424242;
+  border: 1px solid #000000;
   background: none;
   padding: 5px;
   width: 100%;
+}
+
+.mainsearch-cont-settings-wrap-item-input ::-webkit-input-placeholder {
+  font-size: 11px;
+}
+
+.mainsearch-cont-settings-wrap-item-input :-ms-input-placeholder {
+  font-size: 11px;
+}
+
+.mainsearch-cont-settings-wrap-item-input ::-ms-input-placeholder {
+  font-size: 11px;
+}
+
+.mainsearch-cont-settings-wrap-item-input ::placeholder {
+  font-size: 11px;
 }
 
 .mainsearch-cont-result {
@@ -736,6 +775,7 @@ input, select {
   border-radius: 4px;
   width: 100%;
   padding: 5px;
+  font-size: 12px;
 }
 
 .mainsearch-cont-result .product-hit {
@@ -744,14 +784,18 @@ input, select {
 }
 
 .mainsearch-cont-result .product-hit .mainBtn {
-  border: 2px solid #424242;
+  border: 2px solid #000000;
+}
+
+.mainsearch-cont-result .product-hit .mainsearch-cont-result-item-count-price {
+  padding: 20px 0 0 0;
 }
 
 .mainsearch-cont-result .product-hit .mainsearch-cont-result-item-count-price h4 {
   border-radius: 4px;
   padding: 5px;
   display: inline-block;
-  border: 2px solid #424242;
+  border: 2px solid #000000;
 }
 
 .mainsearch-cont-result .product-hit .product-hit-img {
@@ -769,19 +813,19 @@ input, select {
 
 .mainsearch-cont-result .product-hit .product-hit-img p {
   padding: 0;
-  font-size: 10px;
+  font-size: 8px;
   text-transform: uppercase;
   margin: 0 5px 0 0;
 }
 
 .mainsearch-cont-result .product-hit .product-hit-img img {
-  width: 25%;
+  width: 15px;
   height: auto;
 }
 
 .mainsearch-cont-result-item {
   border-radius: 4px;
-  border: 1px solid rgba(66, 66, 66, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -800,14 +844,14 @@ input, select {
 .mainsearch-cont-result-item-desc h4 {
   margin: 0 0 10px 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: normal;
 }
 
 .mainsearch-cont-result-item-desc p {
   margin: 0 0 10px 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .mainsearch-cont-result-item-place {
@@ -818,14 +862,14 @@ input, select {
 .mainsearch-cont-result-item-place h4 {
   margin: 0 0 10px 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: normal;
 }
 
 .mainsearch-cont-result-item-place p {
   margin: 0 0 10px 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .mainsearch-cont-result-item-place-stars {
@@ -859,6 +903,7 @@ input, select {
           flex-direction: column;
   text-align: center;
   position: relative;
+  padding: 5px;
 }
 
 .mainsearch-cont-result-item-count:after {
@@ -868,7 +913,7 @@ input, select {
   top: 10%;
   width: 2px;
   height: 80%;
-  background: rgba(66, 66, 66, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .mainsearch-cont-result-item-count-price {
@@ -876,9 +921,14 @@ input, select {
 }
 
 .mainsearch-cont-result-item-count-price p {
+  font-size: 12px;
   margin-top: auto;
   padding: 0;
   margin-bottom: 5px;
+}
+
+.mainsearch-cont-result-item-count-price h4 {
+  font-size: 18px;
 }
 
 .mainsearch-cont-result-item-count-btn {
@@ -908,7 +958,7 @@ input, select {
 }
 
 .mainsearch-cont-result-pagination-number-list .pagination-current {
-  border: 1px solid #424242;
+  border: 1px solid #000000;
 }
 
 .mainsearch-cont-result-pagination-number-list ul {
@@ -1008,7 +1058,7 @@ input, select {
     padding: 20px;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    background: rgba(66, 66, 66, 0.2);
+    background: rgba(0, 0, 0, 0.2);
   }
   .mainsearch-cont-settings-btn .mainBtn {
     display: block;
@@ -1073,7 +1123,7 @@ input, select {
     top: 10%;
     width: 2px;
     height: 80%;
-    background: rgba(66, 66, 66, 0.5);
+    background: rgba(0, 0, 0, 0.5);
   }
   .mainsearch-cont-result-item-count-price {
     margin-top: auto;
@@ -1144,6 +1194,7 @@ input, select {
 }
 
 .footer__cont-list-wrap ul li a {
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.7);
   -webkit-transition: .3s;
   transition: .3s;
