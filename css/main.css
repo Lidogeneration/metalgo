@@ -1299,8 +1299,8 @@ select:focus {
 }
 
 .footer__cont-list-logo {
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 50px;
+  margin-left: 50px;
   position: relative;
 }
 
@@ -1411,9 +1411,9 @@ select:focus {
   text-decoration: underline;
 }
 
-@media (max-width: 1370px) {
-  .footer__cont-list-logo {
-    margin: 0;
+@media (max-width: 1400px) {
+  .footer__cont-list-wrap {
+    padding: 0;
   }
   .footer__cont-list-wrap ul li {
     padding: 10px;
