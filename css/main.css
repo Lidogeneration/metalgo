@@ -65,8 +65,8 @@ body {
   color: #000000;
   margin: 0;
   padding: 0;
-  position: relative;
   line-height: 1;
+  height: 100%;
 }
 
 body a {
@@ -324,13 +324,6 @@ select:focus {
   }
   .header__nav-cont-calc {
     width: 30%;
-  }
-  .header__nav-cont-user {
-    width: 250px;
-    max-width: 100%;
-  }
-  .header__nav-cont-user-desc-title p {
-    font-size: 14px;
   }
 }
 
@@ -681,7 +674,12 @@ select:focus {
 .mainsearch-cont-settings {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
-  position: relative;
+}
+
+.mainsearch-cont-settings-fixed {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .mainsearch-cont-settings-title h3 {
