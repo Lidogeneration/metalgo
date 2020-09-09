@@ -26,11 +26,14 @@
         &-item
           margin-bottom: 10px
           select
-            border-radius: 4px
+            border-radius: $br-radius
             border: 1px solid $main_color
             background: none
             width: 100%
             padding: 5px
+            option
+              &:hover
+                background: #000
           &-desc
             h4
               text-transform: uppercase
@@ -49,7 +52,7 @@
               height: 2px
               background: $main_color
             input
-              border-radius: 4px
+              border-radius: $br-radius
               border: 1px solid $main_color
               background: none
               padding: 5px
@@ -65,7 +68,7 @@
               font-size: 11px
           &-input
             input
-              border-radius: 4px
+              border-radius: $br-radius
               border: 1px solid $main_color
               background: none
               padding: 5px
@@ -77,7 +80,7 @@
       &-filter
         margin-bottom: 20px
         select
-          border-radius: 4px
+          border-radius: $br-radius
           width: 100%
           padding: 5px
           font-size: 12px
@@ -89,7 +92,7 @@
         .mainsearch-cont-result-item-count-price
           padding: 20px 0 0 0 
           h4
-            border-radius: 4px
+            border-radius: $br-radius
             padding: 5px
             display: inline-block
             border: 2px solid $main_color
@@ -107,7 +110,7 @@
             width: 15px
             height: auto
       &-item
-        border-radius: 4px
+        border-radius: $br-radius
         border: 1px solid $main_bg
         padding: 10px
         display: flex

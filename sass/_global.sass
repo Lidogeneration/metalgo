@@ -26,6 +26,10 @@ section
 	
 input, select 
 	font-size: 14px	
+select
+	&:focus
+		border-color: $main_rgb
+		box-shadow: 0 0 0 0.2rem rgba($main_rgb,.25)
 .overlay
 	position: fixed
 	width: 100%

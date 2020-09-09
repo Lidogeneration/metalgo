@@ -95,6 +95,12 @@ input, select {
   font-size: 14px;
 }
 
+select:focus {
+  border-color: #edb021;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(237, 176, 33, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(237, 176, 33, 0.25);
+}
+
 .overlay {
   position: fixed;
   width: 100%;
@@ -253,7 +259,7 @@ input, select {
   margin: 5px;
   padding: 5px;
   width: 220px;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .header__nav-cont-user-icon {
@@ -553,7 +559,7 @@ input, select {
 }
 
 .offer__cont-input input {
-  border-radius: 4px;
+  border-radius: 5px;
   width: 100%;
   padding: 10px;
   border: none;
@@ -581,7 +587,7 @@ input, select {
 }
 
 .offer__cont-input label {
-  border-radius: 4px;
+  border-radius: 5px;
   background: #edb021;
   position: absolute;
   right: 0;
@@ -671,11 +677,15 @@ input, select {
 }
 
 .mainsearch-cont-settings-wrap-item select {
-  border-radius: 4px;
+  border-radius: 5px;
   border: 1px solid #000000;
   background: none;
   width: 100%;
   padding: 5px;
+}
+
+.mainsearch-cont-settings-wrap-item select option:hover {
+  background: #000;
 }
 
 .mainsearch-cont-settings-wrap-item-desc h4 {
@@ -704,7 +714,7 @@ input, select {
 }
 
 .mainsearch-cont-settings-wrap-item-inputd input {
-  border-radius: 4px;
+  border-radius: 5px;
   border: 1px solid #000000;
   background: none;
   padding: 5px;
@@ -739,7 +749,7 @@ input, select {
 }
 
 .mainsearch-cont-settings-wrap-item-input input {
-  border-radius: 4px;
+  border-radius: 5px;
   border: 1px solid #000000;
   background: none;
   padding: 5px;
@@ -772,7 +782,7 @@ input, select {
 }
 
 .mainsearch-cont-result-filter select {
-  border-radius: 4px;
+  border-radius: 5px;
   width: 100%;
   padding: 5px;
   font-size: 12px;
@@ -792,7 +802,7 @@ input, select {
 }
 
 .mainsearch-cont-result .product-hit .mainsearch-cont-result-item-count-price h4 {
-  border-radius: 4px;
+  border-radius: 5px;
   padding: 5px;
   display: inline-block;
   border: 2px solid #000000;
@@ -824,7 +834,7 @@ input, select {
 }
 
 .mainsearch-cont-result-item {
-  border-radius: 4px;
+  border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.5);
   padding: 10px;
   display: -webkit-box;
@@ -1299,6 +1309,211 @@ input, select {
   }
 }
 
+.mydeal {
+  padding: 40px 0;
+}
+
+.mydeal__title {
+  margin-bottom: 50px;
+}
+
+.mydeal__title h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  background: #969696;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 16px solid #edb021;
+}
+
+.mydeal__desc {
+  padding-left: 16px;
+  margin-bottom: 50px;
+}
+
+.mydeal__desc p {
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.mydeal__tabs {
+  margin-bottom: 36px;
+}
+
+.mydeal__tabs .active-cont {
+  display: block;
+}
+
+.mydeal__tabs .active-list {
+  color: #ffffff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.mydeal__tabs-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.mydeal__tabs-list ul li {
+  display: inline-block;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 15px;
+  background: #edb021;
+  border: 1px solid #000000;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.mydeal__tabs-list ul li:first-child {
+  border-top-left-radius: 5px;
+}
+
+.mydeal__tabs-list ul li:last-child {
+  border-top-right-radius: 5px;
+}
+
+.mydeal__tabs-cont {
+  padding: 30px;
+  border: 1px solid #000000;
+  border-radius: 0px 5px 5px 5px;
+  display: none;
+}
+
+.mydeal__tabs-cont-title {
+  border-bottom: 1px solid #edb021;
+  padding: 0 15px 20px 15px;
+  margin-bottom: 20px;
+}
+
+.mydeal__tabs-cont-title ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mydeal__tabs-cont-title ul li {
+  text-align: center;
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+  color: #969696;
+  font-size: 18px;
+}
+
+.mydeal__tabs-cont-text {
+  padding: 0 15px;
+}
+
+.mydeal__tabs-cont-text ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.mydeal__tabs-cont-text ul li {
+  text-align: center;
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+  font-size: 24px;
+}
+
+.mydeal__btn {
+  text-align: right;
+  margin-bottom: 100px;
+}
+
+.mydeal__btn .mainBtn {
+  text-transform: uppercase;
+  font-size: 28px;
+  display: inline-block;
+}
+
+.mydeal__banner img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .mydeal {
+    padding: 20px 10px;
+  }
+  .mydeal__title {
+    margin-bottom: 10px;
+  }
+  .mydeal__title h3 {
+    font-size: 14px;
+  }
+  .mydeal__desc {
+    margin-bottom: 15px;
+  }
+  .mydeal__desc p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .mydeal__tabs-list ul li {
+    text-align: center;
+    font-size: 16px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .mydeal__tabs-cont {
+    border-top-right-radius: 0;
+    padding: 5px;
+  }
+  .mydeal__tabs-cont-title {
+    padding: 15px 0;
+  }
+  .mydeal__tabs-cont-title ul li {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    font-size: 10px;
+  }
+  .mydeal__tabs-cont-text {
+    padding: 0;
+  }
+  .mydeal__tabs-cont-text ul li {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    font-size: 12px;
+  }
+  .mydeal__btn {
+    margin-bottom: 20px;
+  }
+  .mydeal__btn .mainBtn {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 350px) {
+  .mydeal__tabs-cont-text ul li {
+    font-size: 10px;
+  }
+}
+
 /* --- button start Start ------------------------------------------------*/
 .mainBtn {
   border: 2px solid #edb021;
@@ -1308,7 +1523,7 @@ input, select {
   -webkit-transition: .3s;
   transition: .3s;
   max-width: 100%;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .mainBtn:hover {
