@@ -698,7 +698,7 @@ select:focus {
   background: none;
   font-size: 14px;
   position: relative;
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 .mainsearch-cont-settings-btn .reset:after {
@@ -706,7 +706,7 @@ select:focus {
   position: absolute;
   top: 39%;
   left: 0;
-  width: 20px;
+  width: 15px;
   height: 3px;
   background: #edb021;
   -webkit-transform: rotate(-45deg);
@@ -718,7 +718,7 @@ select:focus {
   position: absolute;
   bottom: 44%;
   left: 0;
-  width: 20px;
+  width: 15px;
   height: 3px;
   background: #edb021;
   -webkit-transform: rotate(45deg);
