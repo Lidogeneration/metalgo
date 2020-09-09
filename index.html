@@ -93,7 +93,7 @@
 				<!-- /.header__nav-cont-user-icon -->
 				<div class="header__nav-cont-user-desc">
 					<div class="header__nav-cont-user-desc-title">
-						<p>Поставщик ООО "Северсталь"</p>
+						<p>Поставщик<br><span>ООО "Северсталь"</span></p>
 					</div>
 					<!-- /.header__nav-cont-user-desc-title -->
 					<div class="header__nav-cont-user-desc-start">
@@ -107,7 +107,7 @@
 				</div>
 				<!-- /.header__nav-cont-user-desc -->
 				<div class="header__nav-cont-user-arrow">
-					<a href="#"><img src="img/arrow.svg" alt=""></a>
+					<a href="#"><img src="img/userArrow.svg" alt=""></a>
 				</div>
 				<!-- /.header__nav-cont-user-arrow -->
 			</div>
@@ -155,94 +155,99 @@
 	<!-- /.mainsearch-mobile -->
 	<div class="mainsearch-cont global-cont">
 		<div class="mainsearch-cont-settings" id="settingsm">
-			<div class="mainsearch-cont-settings-title">
-				<h3>Параметры поиска</h3>
+			<div class="mainsearch-cont-settings-fixed">
+				<div class="mainsearch-cont-settings-title">
+					<h3>Параметры поиска</h3>
+				</div>
+				<!-- /.mainsearch-cont-settings-title -->
+				<form class="mainsearch-cont-settings-wrap">
+					<div class="mainsearch-cont-settings-wrap-item">
+						<select name="category" id="category">
+							<option value="Категонии" disabled selected>Категонии</option>
+							<option value="opt01">opt01</option>
+							<option value="opt02">opt02</option>
+							<option value="opt03">opt03</option>
+						</select>
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item -->
+					<div class="mainsearch-cont-settings-wrap-item">
+						<div class="mainsearch-cont-settings-wrap-item-desc">
+							<h4>Размер</h4>
+						</div>
+						<!-- /.mainsearch-cont-settings-wrap-item-desc -->
+						<div class="mainsearch-cont-settings-wrap-item-inputd">
+							<input type="number" placeholder="Минимальный"><input type="number" placeholder="Максимальный">
+						</div>
+						<!-- /.mainsearch-cont-settings-wrap-item-input -->
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item -->
+					<div class="mainsearch-cont-settings-wrap-item">
+						<div class="mainsearch-cont-settings-wrap-item-desc">
+							<h4>Марка</h4>
+						</div>
+						<!-- /.mainsearch-cont-settings-wrap-item-desc -->
+						<div class="mainsearch-cont-settings-wrap-item-input">
+							<input type="text" placeholder="Начните вводить марку">
+						</div>
+						<!-- /.mainsearch-cont-settings-wrap-item-input -->
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item -->
+					<div class="mainsearch-cont-settings-wrap-item">
+						<div class="mainsearch-cont-settings-wrap-item-desc">
+							<h4>Цена</h4>
+						</div>
+						<!-- /.mainsearch-cont-settings-wrap-item-desc -->
+						<div class="mainsearch-cont-settings-wrap-item-inputd">
+							<input type="number" placeholder="Минимальный"><input type="number" placeholder="Максимальный">
+						</div>
+						<!-- /.mainsearch-cont-settings-wrap-item-input -->
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item -->
+					<div class="mainsearch-cont-settings-wrap-item">
+						<div class="mainsearch-cont-settings-wrap-item-desc">
+							<h4>Остаток</h4>
+						</div>
+						<!-- /.mainsearch-cont-settings-wrap-item-desc -->
+						<div class="mainsearch-cont-settings-wrap-item-inputd">
+							<input type="number" placeholder="Минимальный"><input type="number" placeholder="Максимальный">
+						</div>
+						<!-- /.mainsearch-cont-settings-wrap-item-input -->
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item -->
+					<div class="mainsearch-cont-settings-wrap-item">
+						<div class="mainsearch-cont-settings-wrap-item-desc">
+							<h4>Город</h4>
+						</div>
+						<!-- /.mainsearch-cont-settings-wrap-item-desc -->
+						<div class="mainsearch-cont-settings-wrap-item-input">
+							<input type="text" placeholder="Начните вводить город">
+						</div>
+						<!-- /.mainsearch-cont-settings-wrap-item-input -->
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item -->
+					<div class="mainsearch-cont-settings-wrap-item">
+						<div class="mainsearch-cont-settings-wrap-item-desc">
+							<h4>Поставщик</h4>
+						</div>
+						<!-- /.mainsearch-cont-settings-wrap-item-desc -->
+						<div class="mainsearch-cont-settings-wrap-item-input">
+							<input type="text" placeholder="Начните вводить имя поставщика">
+						</div>
+						<!-- /.mainsearch-cont-settings-wrap-item-input -->
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item -->
+				</form>
+				<!-- /.mainsearch-cont-settings-wrap -->
+				<div class="mainsearch-cont-settings-btn">
+					<button class="reset">
+						Сбросить
+					</button>
+					<button class="mainBtn" id="settingsBtn">
+						Применить
+					</button>
+				</div>
+				<!-- /.mainsearch-cont-settings-btn -->
 			</div>
-			<!-- /.mainsearch-cont-settings-title -->
-			<form class="mainsearch-cont-settings-wrap">
-				<div class="mainsearch-cont-settings-wrap-item">
-					<select name="category" id="category">
-						<option value="Категонии" disabled selected>Категонии</option>
-						<option value="opt01">opt01</option>
-						<option value="opt02">opt02</option>
-						<option value="opt03">opt03</option>
-					</select>
-				</div>
-				<!-- /.mainsearch-cont-settings-wrap-item -->
-				<div class="mainsearch-cont-settings-wrap-item">
-					<div class="mainsearch-cont-settings-wrap-item-desc">
-						<h4>Размер</h4>
-					</div>
-					<!-- /.mainsearch-cont-settings-wrap-item-desc -->
-					<div class="mainsearch-cont-settings-wrap-item-inputd">
-						<input type="number" placeholder="Минимальный"><input type="number" placeholder="Максимальный">
-					</div>
-					<!-- /.mainsearch-cont-settings-wrap-item-input -->
-				</div>
-				<!-- /.mainsearch-cont-settings-wrap-item -->
-				<div class="mainsearch-cont-settings-wrap-item">
-					<div class="mainsearch-cont-settings-wrap-item-desc">
-						<h4>Марка</h4>
-					</div>
-					<!-- /.mainsearch-cont-settings-wrap-item-desc -->
-					<div class="mainsearch-cont-settings-wrap-item-input">
-						<input type="text" placeholder="Начните вводить марку">
-					</div>
-					<!-- /.mainsearch-cont-settings-wrap-item-input -->
-				</div>
-				<!-- /.mainsearch-cont-settings-wrap-item -->
-				<div class="mainsearch-cont-settings-wrap-item">
-					<div class="mainsearch-cont-settings-wrap-item-desc">
-						<h4>Цена</h4>
-					</div>
-					<!-- /.mainsearch-cont-settings-wrap-item-desc -->
-					<div class="mainsearch-cont-settings-wrap-item-inputd">
-						<input type="number" placeholder="Минимальный"><input type="number" placeholder="Максимальный">
-					</div>
-					<!-- /.mainsearch-cont-settings-wrap-item-input -->
-				</div>
-				<!-- /.mainsearch-cont-settings-wrap-item -->
-				<div class="mainsearch-cont-settings-wrap-item">
-					<div class="mainsearch-cont-settings-wrap-item-desc">
-						<h4>Остаток</h4>
-					</div>
-					<!-- /.mainsearch-cont-settings-wrap-item-desc -->
-					<div class="mainsearch-cont-settings-wrap-item-inputd">
-						<input type="number" placeholder="Минимальный"><input type="number" placeholder="Максимальный">
-					</div>
-					<!-- /.mainsearch-cont-settings-wrap-item-input -->
-				</div>
-				<!-- /.mainsearch-cont-settings-wrap-item -->
-				<div class="mainsearch-cont-settings-wrap-item">
-					<div class="mainsearch-cont-settings-wrap-item-desc">
-						<h4>Город</h4>
-					</div>
-					<!-- /.mainsearch-cont-settings-wrap-item-desc -->
-					<div class="mainsearch-cont-settings-wrap-item-input">
-						<input type="text" placeholder="Начните вводить город">
-					</div>
-					<!-- /.mainsearch-cont-settings-wrap-item-input -->
-				</div>
-				<!-- /.mainsearch-cont-settings-wrap-item -->
-				<div class="mainsearch-cont-settings-wrap-item">
-					<div class="mainsearch-cont-settings-wrap-item-desc">
-						<h4>Поставщик</h4>
-					</div>
-					<!-- /.mainsearch-cont-settings-wrap-item-desc -->
-					<div class="mainsearch-cont-settings-wrap-item-input">
-						<input type="text" placeholder="Начните вводить имя поставщика">
-					</div>
-					<!-- /.mainsearch-cont-settings-wrap-item-input -->
-				</div>
-				<!-- /.mainsearch-cont-settings-wrap-item -->
-			</form>
-			<!-- /.mainsearch-cont-settings-wrap -->
-			<div class="mainsearch-cont-settings-btn">
-				<button class="mainBtn" id="settingsBtn">
-					Применить
-				</button>
-			</div>
-			<!-- /.mainsearch-cont-settings-btn -->
 		</div>
 		<!-- /.mainsearch-cont-settings -->
 		<div class="mainsearch-cont-result">

@@ -4,19 +4,24 @@
   &__cont
     &-list
       display: flex
-      justify-content: space-around
+      justify-content: center
       align-items: center
-      margin-bottom: 60px
+      margin-bottom: 40px
       position: relative
       &-logo
+        margin-right: 40px
+        margin-left: 40px
         position: relative
+        img
+          &:first-child
+            margin-right: 16px
         &:after
           content: ''
           position: absolute
-          bottom: -30px
+          bottom: -20px
           left: 0
           width: 100%
-          height: 3px
+          height: 1px
           background: $main_rgb
       &-wrap
         padding: 10px 20px
@@ -26,7 +31,7 @@
           list-style: none
           li
             display: inline
-            padding: 10px
+            padding: 10px 17px
             text-transform: uppercase
             a
               font-size: 14px
@@ -37,7 +42,7 @@
                 color: $main_rgb
     &-social
       text-align: center
-      margin: 30px
+      margin: 20px
       a
         margin-right: 10px
         &:last-child
@@ -61,8 +66,31 @@
       flex-wrap: wrap
       li
         margin: 5px
+        font-size: 8px
+        color: $main_color2
         a
+          font-size: 8px
+          color: $main_color2
           text-decoration: underline
+  @media(max-width: 1370px)
+    &__cont
+      &-list
+        &-logo
+          margin: 0
+        &-wrap
+          ul
+            li
+              padding: 10px
+  @media(max-width: 1150px)
+    &__cont
+      &-list
+        &-logo
+          margin: 0
+        &-wrap
+          padding: 10px
+          ul
+            li
+              padding: 5px
   @media(max-width: 992px)
     &__cont
       &-list
