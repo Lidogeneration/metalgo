@@ -65,8 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const tabsList = document.querySelectorAll('.mydeal__tabs-list ul li'),
         tabsCont = document.querySelectorAll('.mydeal__tabs-cont');
-    
-    if(tabsList) {
+    if(tabsList.length != 0) {
         tabsList[0].classList.add('active-list');
         tabsCont[0].classList.add('active-cont');
         tabsList.forEach((key, i) => {
@@ -80,5 +79,4 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
 });

@@ -11,7 +11,6 @@
       padding: 0
       margin: 0
   &-cont
-    overflow: hidden
     padding: 24px 0
     display: flex
     justify-content: space-between
@@ -24,7 +23,7 @@
         h3
           font-size: 18px
       &-btn
-        margin-top: 20px
+        margin-top: 10px
         text-align: center
         .reset
           display: block
@@ -56,10 +55,10 @@
           display: none
       &-wrap
         &-item
-          margin-bottom: 10px
+          margin-bottom: 3px
           select
             border-radius: $br-radius
-            border: 1px solid $main_color
+            border: 1px solid $main_bg3
             background: none
             width: 100%
             padding: 5px
@@ -71,6 +70,7 @@
               text-transform: uppercase
               font-size: 14px
               font-weight: normal
+              margin-bottom: 3px
           &-inputd
             display: flex
             position: relative
@@ -85,7 +85,7 @@
               background: $main_color
             input
               border-radius: $br-radius
-              border: 1px solid $main_color
+              border: 1px solid $main_bg3
               background: none
               padding: 5px
               width: 45%
@@ -97,15 +97,17 @@
                 margin-left: auto
                 margin-right: 0
             ::placeholder
+              color: $main_bg3
               font-size: 11px
           &-input
             input
               border-radius: $br-radius
-              border: 1px solid $main_color
+              border: 1px solid $main_bg3
               background: none
               padding: 5px
               width: 100%
             ::placeholder
+              color: $main_bg3
               font-size: 11px
     &-result
       flex-basis: 55%
@@ -116,6 +118,7 @@
           width: 100%
           padding: 5px
           font-size: 12px
+          border: 1px solid $main_color
       .product-hit
         position: relative
         background: $main_rgb
@@ -127,6 +130,7 @@
           border: 1px solid $main_color
         .mainsearch-cont-result-item-count
           justify-content: space-between
+          align-items: center
           &:after
             background: $main_color
         .mainsearch-cont-result-item-count-price
@@ -134,6 +138,8 @@
           flex-direction: column
           justify-content: center
           align-items: center
+          p
+            text-align: center
           h4
             border-radius: $br-radius
             padding: 5px 10px
@@ -144,10 +150,11 @@
           justify-content: center
           align-items: center
           p
+            text-transform: lowercase
             padding: 0
             font-size: 8px
-            text-transform: uppercase
             margin: 0 5px 0 0
+            text-transform: uppercase
           img
             width: 15px
             height: auto
@@ -160,7 +167,7 @@
         justify-content: space-between
         margin-bottom: 20px
         &-desc
-          flex-basis: 30%
+          flex-basis: 25%
           h4
             margin: 0 0 5px 0
             padding: 0
@@ -195,7 +202,7 @@
               &:not(:last-child)
                 margin-right: 5px
         &-count
-          flex-basis: 25%
+          flex-basis: 30%
           display: flex
           justify-content: center
           align-items: center
@@ -207,18 +214,21 @@
             content: ''
             position: absolute
             left: 0
-            top: 10%
+            top: 7%
             width: 1px
-            height: 80%
+            height: 86%
             background: $main_bg3
           &-price
+            text-align: center
             margin-top: auto
+            padding-right: 3px
             p
               font-size: 12px
               margin-top: auto
               padding: 0
               margin-bottom: 5px
             h4
+              padding-left: 10px
               font-size: 18px
           &-btn
             margin-top: auto
@@ -282,6 +292,7 @@
     &-cont
       padding: 0
       flex-direction: column
+      overflow: hidden
       &-settings
         opacity: 0
         position: absolute
@@ -289,13 +300,6 @@
         padding: 20px
         flex-basis: 100%
         background: rgba($main_bg, .2)
-        &-btn
-          .reset
-            display: none
-          .mainBtn
-            display: block
-            margin-left: auto
-            margin-right: auto
       &-result
         padding: 20px
         flex-basis: 100%
