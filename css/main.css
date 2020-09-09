@@ -899,7 +899,7 @@ select:focus {
 }
 
 .mainsearch-cont-result .product-hit .mainsearch-cont-result-item-count-price p {
-  text-align: center;
+  text-align: right;
 }
 
 .mainsearch-cont-result .product-hit .mainsearch-cont-result-item-count-price h4 {
