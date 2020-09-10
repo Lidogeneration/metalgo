@@ -1,5 +1,5 @@
 .mainsearch
-  overflow: hidden
+  overflow: unset
   &-mobile
     display: none
     background: $main_bg3
@@ -16,9 +16,12 @@
     justify-content: space-between
     &-settings
       flex-basis: 20%
+      position: relative
+      overflow: unset
       &-fixed
+        overflow: unset
         position: sticky
-        top: 0
+        top: 100px
       &-title
         h3
           font-size: 18px
@@ -36,7 +39,7 @@
           &:after
             content: ''
             position: absolute
-            top: 39%
+            top: 38%
             left: 0
             width: 15px
             height: 3px
