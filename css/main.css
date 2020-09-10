@@ -64,7 +64,7 @@ body {
   font-size: 16px;
   color: #000000;
   margin: 0;
-  padding: 0;
+  padding: 96px 0 0 0;
   line-height: 1;
   height: 100%;
 }
@@ -120,6 +120,9 @@ select:focus {
 }
 
 @media (max-width: 992px) {
+  body {
+    padding: 82px 0 0 0;
+  }
   .global-cont {
     max-width: 100%;
   }
@@ -391,7 +394,7 @@ select:focus {
     margin-bottom: 10px;
   }
   .header__nav-title h3 {
-    font-size: 16px;
+    font-size: 14px;
   }
   .header__nav-cont {
     -webkit-transition: .5s;
@@ -564,7 +567,7 @@ select:focus {
 
 .offer {
   background: #dcdcdc;
-  padding: 106px 0 30px 0;
+  padding: 10px 0 30px 0;
 }
 
 .offer__cont-title h3 {
@@ -1498,16 +1501,16 @@ select:focus {
 }
 
 .mydeal {
-  padding: 106px 0 40px 0;
+  padding: 40px 0;
 }
 
 .mydeal__title {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .mydeal__title h3 {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 18px;
   color: #ffffff;
   margin: 0;
   padding: 0;
@@ -1523,7 +1526,7 @@ select:focus {
 }
 
 .mydeal__desc p {
-  font-size: 30px;
+  font-size: 14px;
   padding: 0;
   margin: 0;
   line-height: 1.2;
@@ -1647,7 +1650,7 @@ select:focus {
 
 @media (max-width: 992px) {
   .mydeal {
-    padding: 106px 10px 20px 10px;
+    padding: 20px 10px;
   }
   .mydeal__title {
     margin-bottom: 10px;
