@@ -1686,7 +1686,6 @@ select:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 10px;
 }
 
 .mydeal__tabs-cont-text ul li {
