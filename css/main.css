@@ -1110,7 +1110,7 @@ select:focus {
 }
 
 .mainsearch-cont-result-pagination-number-list .pagination-current {
-  border: 1px solid #000000;
+  border: 1px solid #dcdcdc;
   border-radius: 5px;
 }
 
@@ -1118,11 +1118,24 @@ select:focus {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .mainsearch-cont-result-pagination-number-list ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
   padding: 5px;
-  display: inline;
   margin-right: 5px;
 }
 
@@ -1136,18 +1149,38 @@ select:focus {
 }
 
 .mainsearch-cont-result-pagination-number-decore span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
   margin-right: 10px;
 }
 
 .mainsearch-cont-result-pagination-number-decore p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
   margin: 0;
   padding: 0;
-  margin-right: 10%;
+  margin-right: 15px;
 }
 
 .mainsearch-cont-result-pagination-number-decore img {
-  width: 13px;
-  height: auto;
+  width: 25px;
+  height: 30px;
 }
 
 .mainsearch-cont-result-pagination-count {
@@ -1169,6 +1202,18 @@ select:focus {
 }
 
 .mainsearch-cont-result-pagination-count select {
+  padding: 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  border: 1px solid #dcdcdc;
   border-radius: 5px;
 }
 
