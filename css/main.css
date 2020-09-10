@@ -1605,7 +1605,7 @@ select:focus {
   display: inline-block;
   font-size: 14px;
   text-transform: uppercase;
-  padding: 15px;
+  padding: 10px;
   background: #edb021;
   border: 1px solid #000000;
   -webkit-transition: .3s;
