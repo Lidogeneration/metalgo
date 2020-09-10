@@ -1501,16 +1501,16 @@ select:focus {
 }
 
 .mydeal {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .mydeal__title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .mydeal__title h3 {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 14px;
   color: #ffffff;
   margin: 0;
   padding: 0;
@@ -1522,7 +1522,7 @@ select:focus {
 
 .mydeal__desc {
   padding-left: 16px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .mydeal__desc p {
@@ -1533,7 +1533,7 @@ select:focus {
 }
 
 .mydeal__tabs {
-  margin-bottom: 36px;
+  margin-bottom: 15px;
 }
 
 .mydeal__tabs .active-cont {
@@ -1558,7 +1558,7 @@ select:focus {
 
 .mydeal__tabs-list ul li {
   display: inline-block;
-  font-size: 24px;
+  font-size: 14px;
   text-transform: uppercase;
   padding: 15px;
   background: #edb021;
@@ -1605,7 +1605,7 @@ select:focus {
   -ms-flex-preferred-size: 10%;
       flex-basis: 10%;
   color: #969696;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .mydeal__tabs-cont-text {
@@ -1629,17 +1629,17 @@ select:focus {
   text-align: center;
   -ms-flex-preferred-size: 10%;
       flex-basis: 10%;
-  font-size: 24px;
+  font-size: 14px;
 }
 
 .mydeal__btn {
   text-align: right;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 .mydeal__btn .mainBtn {
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 14px;
   display: inline-block;
 }
 
