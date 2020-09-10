@@ -260,7 +260,7 @@ select:focus {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #edb021;
-  margin: 5px;
+  margin: 5px 0 5px 5px;
   padding: 5px 10px 5px 20px;
   width: 183px;
   border-radius: 5px;
