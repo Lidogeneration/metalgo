@@ -319,6 +319,7 @@
   @media(max-width: 992px)
     &-mobile
       display: block
+      background: $main_bgD
     &-cont
       padding: 0
       flex-direction: column
@@ -329,7 +330,11 @@
         transform: translateY(-400%)
         padding: 20px
         flex-basis: 100%
-        background: rgba($main_bg, .2)
+        background: $main_bg3
+        input, select
+          border: 1px solid $main_color
+        ::placeholder
+          color: $main_color
       &-result
         padding: 20px
         flex-basis: 100%

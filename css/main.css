@@ -628,6 +628,9 @@ select:focus {
 }
 
 @media (max-width: 992px) {
+  .offer {
+    background: #969696;
+  }
   .offer__cont {
     padding: 0 20px;
   }
@@ -1243,6 +1246,7 @@ select:focus {
 @media (max-width: 992px) {
   .mainsearch-mobile {
     display: block;
+    background: #969696;
   }
   .mainsearch-cont {
     padding: 0;
@@ -1260,7 +1264,22 @@ select:focus {
     padding: 20px;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    background: rgba(0, 0, 0, 0.2);
+    background: #dcdcdc;
+  }
+  .mainsearch-cont-settings input, .mainsearch-cont-settings select {
+    border: 1px solid #000000;
+  }
+  .mainsearch-cont-settings ::-webkit-input-placeholder {
+    color: #000000;
+  }
+  .mainsearch-cont-settings :-ms-input-placeholder {
+    color: #000000;
+  }
+  .mainsearch-cont-settings ::-ms-input-placeholder {
+    color: #000000;
+  }
+  .mainsearch-cont-settings ::placeholder {
+    color: #000000;
   }
   .mainsearch-cont-result {
     padding: 20px;
