@@ -48,14 +48,14 @@
           &:last-child
             border-top-right-radius: 5px
     &-cont
-      padding: 30px
+      padding: 15px 10px
       border: 1px solid $main_color
       border-radius: 0px 5px 5px 5px
       display: none
       &-title
         border-bottom: 1px solid $main_rgb
-        padding: 0 15px 20px 15px
-        margin-bottom: 20px
+        padding: 0 10px 10px 10px
+        margin-bottom: 10px
         ul
           list-style: none
           margin: 0
@@ -72,14 +72,16 @@
         ul
           list-style: none
           margin: 0
-          padding: 0
+          padding: 5px
           display: flex
           justify-content: space-between
-          margin-bottom: 20px
+          margin-bottom: 10px
           li
             text-align: center
             flex-basis: 10%
             font-size: 14px
+          &:nth-child(odd)
+            background: $main_bg3
   &__btn
     text-align: right
     margin-bottom: 20px

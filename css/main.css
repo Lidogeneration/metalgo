@@ -64,7 +64,7 @@ body {
   font-size: 16px;
   color: #000000;
   margin: 0;
-  padding: 96px 0 0 0;
+  padding: 94px 0 0 0;
   line-height: 1;
   height: 100%;
 }
@@ -1621,7 +1621,7 @@ select:focus {
 }
 
 .mydeal__tabs-cont {
-  padding: 30px;
+  padding: 15px 10px;
   border: 1px solid #000000;
   border-radius: 0px 5px 5px 5px;
   display: none;
@@ -1629,8 +1629,8 @@ select:focus {
 
 .mydeal__tabs-cont-title {
   border-bottom: 1px solid #edb021;
-  padding: 0 15px 20px 15px;
-  margin-bottom: 20px;
+  padding: 0 10px 10px 10px;
+  margin-bottom: 10px;
 }
 
 .mydeal__tabs-cont-title ul {
@@ -1660,14 +1660,14 @@ select:focus {
 .mydeal__tabs-cont-text ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .mydeal__tabs-cont-text ul li {
@@ -1675,6 +1675,10 @@ select:focus {
   -ms-flex-preferred-size: 10%;
       flex-basis: 10%;
   font-size: 14px;
+}
+
+.mydeal__tabs-cont-text ul:nth-child(odd) {
+  background: #dcdcdc;
 }
 
 .mydeal__btn {
