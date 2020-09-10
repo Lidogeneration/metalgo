@@ -127,6 +127,11 @@ select:focus {
 
 .header {
   background: #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
 }
 
 .header__nav-mobile {
@@ -207,7 +212,7 @@ select:focus {
 }
 
 .header__nav-cont-list ul li a:hover {
-  background: rgba(0, 0, 255, 0.6);
+  background: #1C222A;
   color: #edb021;
 }
 
@@ -559,7 +564,7 @@ select:focus {
 
 .offer {
   background: #dcdcdc;
-  padding: 10px 0 30px 0;
+  padding: 106px 0 30px 0;
 }
 
 .offer__cont-title h3 {
@@ -777,6 +782,17 @@ select:focus {
   padding: 5px;
   width: 45%;
   display: inline-block;
+  -moz-appearance: textfield;
+}
+
+.mainsearch-cont-settings-wrap-item-inputd input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.mainsearch-cont-settings-wrap-item-inputd input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .mainsearch-cont-settings-wrap-item-inputd input:nth-child(1) {
@@ -810,6 +826,7 @@ select:focus {
 }
 
 .mainsearch-cont-settings-wrap-item-input input {
+  -moz-appearance: textfield;
   border-radius: 5px;
   border: 1px solid #dcdcdc;
   background: none;
@@ -1091,6 +1108,7 @@ select:focus {
 
 .mainsearch-cont-result-pagination-number-list .pagination-current {
   border: 1px solid #000000;
+  border-radius: 5px;
 }
 
 .mainsearch-cont-result-pagination-number-list ul {
@@ -1143,9 +1161,12 @@ select:focus {
 }
 
 .mainsearch-cont-result-pagination-count p {
-  margin: 0;
+  margin: 0 5px 0 0;
   padding: 0;
-  margin-right: 10px;
+}
+
+.mainsearch-cont-result-pagination-count select {
+  border-radius: 5px;
 }
 
 .mainsearch-cont-banner {
@@ -1477,7 +1498,7 @@ select:focus {
 }
 
 .mydeal {
-  padding: 40px 0;
+  padding: 106px 0 40px 0;
 }
 
 .mydeal__title {
@@ -1626,7 +1647,7 @@ select:focus {
 
 @media (max-width: 992px) {
   .mydeal {
-    padding: 20px 10px;
+    padding: 106px 10px 20px 10px;
   }
   .mydeal__title {
     margin-bottom: 10px;

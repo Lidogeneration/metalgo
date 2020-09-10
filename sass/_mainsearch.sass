@@ -90,6 +90,13 @@
               padding: 5px
               width: 45%
               display: inline-block
+              -moz-appearance: textfield
+              &::-webkit-outer-spin-button
+                -webkit-appearance: none
+                margin: 0
+              &::-webkit-inner-spin-button
+                -webkit-appearance: none
+                margin: 0
               &:nth-child(1)
                 margin-right: auto
                 margin-left: 0
@@ -101,6 +108,7 @@
               font-size: 11px
           &-input
             input
+              -moz-appearance: textfield
               border-radius: $br-radius
               border: 1px solid $main_bg3
               background: none
@@ -245,6 +253,7 @@
           &-list
             .pagination-current
               border: 1px solid $main_color
+              border-radius: $br-radius
             ul
               padding: 0
               margin: 0
@@ -271,9 +280,10 @@
           justify-content: center
           align-items: center
           p
-            margin: 0
+            margin: 0 5px 0 0
             padding: 0
-            margin-right: 10px
+          select
+            border-radius: $br-radius
 
     &-banner
       flex-basis: 15%
