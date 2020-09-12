@@ -81,32 +81,47 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     //list height
-    
-    const listHeightCHeck = (countUl) => {
-        const mainList = document.querySelectorAll('.mainsearch-cont-resultTrade-title ul li'),
-                subList = document.querySelectorAll('.mainsearch-cont-resultTrade-resList ul');
-        if (window.innerWidth <= 992) {
-            mainList.forEach((key, i) => {
-                subList[countUl].children[i].style.height = 'auto';
-                key.style.height = 'auto';
-                if(key.clientHeight >  subList[countUl].children[i].clientHeight) {
-                    subList[countUl].children[i].style.height = key.offsetHeight + 'px';
-                } else {
-                    key.style.height =  subList[countUl].children[i].offsetHeight + 'px';
-                }
+    const slickInit = () => {
+        if(window.innerWidth <= 992 ) {
+            $('.slick-wrap').slick({
+                dots: false,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                arrows: false
             });
+        }
+    };
+
+    const listHeightCHeck = () => {
+        const mainList = document.querySelectorAll('.mainsearch-cont-resultTrade-title ul li'),
+                subList = document.querySelector('.slick-current');
+        if (window.innerWidth <= 992) {
+                mainList.forEach((key, i) => {
+                    subList.children[i].style.height = 'auto';
+                    key.style.height = 'auto';
+                    if(key.clientHeight >  subList.children[i].clientHeight) {
+                        subList.children[i].style.height = key.offsetHeight + 'px';
+                    } else {
+                        key.style.height =  subList.children[i].offsetHeight + 'px';
+                    }
+                });
         } else {
             mainList.forEach((key, i) => {
-                subList[countUl].children[i].style.height = 'auto';
+                subList.children[i].style.height = 'auto';
                 key.style.height = 'auto';
             });
         }
-
     };
-
-    listHeightCHeck(0);
-
+    slickInit();
+    $('.slick-wrap').on('afterChange', function () {
+        listHeightCHeck();
+    });
+    listHeightCHeck();
+   
+    
     window.addEventListener('resize', () => {
-        listHeightCHeck(0);
+        listHeightCHeck();
     });
 });

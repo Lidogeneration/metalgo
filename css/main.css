@@ -1331,6 +1331,7 @@ select:focus {
   font-size: 10px;
   padding: 10px 5px;
   text-transform: uppercase;
+  overflow-wrap: break-word;
   overflow-wrap: anywhere;
 }
 
@@ -1375,6 +1376,10 @@ select:focus {
       flex-basis: 17.5%;
 }
 
+.mainsearch-cont-resultTrade-resList {
+  display: block;
+}
+
 .mainsearch-cont-resultTrade-resList ul {
   margin: 0;
   padding: 0;
@@ -1396,6 +1401,7 @@ select:focus {
   font-size: 10px;
   padding: 10px 5px;
   text-transform: uppercase;
+  overflow-wrap: break-word;
   overflow-wrap: anywhere;
   border: none;
 }
@@ -1472,6 +1478,9 @@ select:focus {
 }
 
 @media (max-width: 992px) {
+  .mainsearch .slick-list {
+    height: 100% !important;
+  }
   .mainsearch-mobile {
     display: block;
     background: #969696;
@@ -1521,19 +1530,16 @@ select:focus {
     padding: 20px;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .mainsearch-cont-resultTrade .mainsearch-cont-result-pagination {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    width: 100%;
   }
   .mainsearch-cont-resultTrade-title {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
+    width: 30%;
+    display: inline-block;
+    float: left;
   }
   .mainsearch-cont-resultTrade-title ul {
     -ms-flex-preferred-size: 100%;
@@ -1568,8 +1574,13 @@ select:focus {
     border-bottom: 1px solid #ffffff !important;
   }
   .mainsearch-cont-resultTrade-resList {
-    -ms-flex-preferred-size: 70%;
-        flex-basis: 70%;
+    width: 70%;
+    display: inline-block;
+  }
+  .mainsearch-cont-resultTrade-resList .slick-wrap {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: 1px solid #dcdcdc !important;
   }
   .mainsearch-cont-resultTrade-resList ul {
     -ms-flex-preferred-size: 100%;
@@ -1580,8 +1591,8 @@ select:focus {
     border-bottom-right-radius: 5px;
     border: 1px solid #dcdcdc;
   }
-  .mainsearch-cont-resultTrade-resList ul:not(:first-child) {
-    display: none;
+  .mainsearch-cont-resultTrade-resList ul:nth-child(even) {
+    background: #ffffff;
   }
   .mainsearch-cont-resultTrade-resList ul li {
     -ms-flex-preferred-size: auto;
