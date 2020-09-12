@@ -2100,6 +2100,39 @@ select:focus {
   margin: 0;
 }
 
+.searchs__offer-lists-second p {
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
+.searchs__offer-lists-second h4 {
+  font-size: 14px;
+}
+
+.searchs__offer-liststwo .searchs__offer-lists-main {
+  margin-bottom: 10px;
+}
+
+.searchs__offer-liststwo .searchs__offer-lists-main ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.searchs__offer-liststwo .searchs__offer-lists-main ul li {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  text-align: left;
+}
+
+.searchs__offer-liststwo .searchs__offer-lists-main ul li:nth-child(1) {
+  margin-right: auto;
+}
+
+.searchs__offer-liststwo .searchs__offer-lists-main ul li:nth-child(2) {
+  margin-right: 20px;
+}
+
 .searchs__offer-msg form textarea {
   width: 100%;
   border-radius: 5px;
