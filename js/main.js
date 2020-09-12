@@ -79,4 +79,28 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    //list height
+    
+    const listHeightCHeck = (countUl) => {
+        const mainList = document.querySelectorAll('.mainsearch-cont-resultTrade-title ul li'),
+                subList = document.querySelectorAll('.mainsearch-cont-resultTrade-resList ul');
+        mainList.forEach((key, i) => {
+            subList[countUl].children[i].style.height = 'auto';
+            key.style.height = 'auto';
+            if(key.clientHeight >  subList[countUl].children[i].clientHeight) {
+                subList[countUl].children[i].style.height = key.offsetHeight + 'px';
+            } else {
+                key.style.height =  subList[countUl].children[i].offsetHeight + 'px';
+            }
+        });
+    };
+    if (window.innerWidth <= 992) {
+        listHeightCHeck(0);
+    }
+    window.addEventListener('resize', () => {
+        if (window.innerWidth <= 992) {
+            listHeightCHeck(0);
+        }
+    });
 });
