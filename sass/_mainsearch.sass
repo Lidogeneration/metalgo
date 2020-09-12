@@ -21,7 +21,7 @@
       &-fixed
         overflow: unset
         position: sticky
-        top: 100px
+        top: 110px
       &-title
         h3
           font-size: 18px
@@ -245,6 +245,41 @@
           &-btn
             margin-top: auto
             margin-bottom: 30px
+      .orders-for-b
+        .product-hit-img
+          justify-content: flex-start
+          img
+            margin-right: 5px
+        .mainsearch-cont-result-item-desc
+          flex-basis: 55%
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          padding: 5px
+          .mainsearch-cont-result-item-place-date
+            margin: 0
+        .mainsearch-cont-result-item-count
+          flex-basis: 45%
+          display: flex
+          justify-content: center
+          align-items: center
+          text-align-last: left
+          .orders-for-b-wrap
+            text-align: left
+            h4
+              margin: 0 0 5px 0
+              padding: 0
+              font-size: 10px
+              font-weight: normal
+            p
+              margin: 0 0 5px 0
+              padding: 0
+              font-size: 18px
+            .mainsearch-cont-result-item-count-btn
+              margin: 0
+              .mainBtn
+                padding: 5px
+                text-align: center
       &-pagination
         display: flex
         justify-content: space-between
@@ -348,12 +383,6 @@
     &-cont
       &-result
         padding: 5px
-        .product-hit
-          .product-hit-img
-            img
-              max-width: 100%
-              width: 30px
-              height: auto
         &-item
           padding: 5px 5px
           align-items: center
@@ -376,7 +405,7 @@
               margin-bottom: 5px
             &-date
               p
-                font-size: 12px
+                font-size: 10px
           &-count
             padding: 5px
             &:after
@@ -451,3 +480,15 @@
               height: 30px
               border: 1px solid $main_bg3
               border-radius: $br-radius
+    .orders-for-b
+      align-items: stretch
+      .mainsearch-cont-result-item-count
+        align-items: stretch
+        flex-direction: row
+        .orders-for-b-wrap
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          .mainsearch-cont-result-item-count-btn
+            .mainBtn
+              font-size: 12px
