@@ -1331,6 +1331,7 @@ select:focus {
   font-size: 10px;
   padding: 10px 5px;
   text-transform: uppercase;
+  word-break: break-word;
   overflow-wrap: break-word;
   overflow-wrap: anywhere;
 }
@@ -1401,6 +1402,7 @@ select:focus {
   font-size: 10px;
   padding: 10px 5px;
   text-transform: uppercase;
+  word-break: break-word;
   overflow-wrap: break-word;
   overflow-wrap: anywhere;
   border: none;
@@ -2201,6 +2203,16 @@ select:focus {
   padding: 20px 0;
 }
 
+.searchs__dealmore {
+  margin-bottom: 20px;
+}
+
+.searchs__dealmore-btn .mainBtn {
+  padding: 5px;
+  text-transform: uppercase;
+  background: #edb021;
+}
+
 .searchs__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2311,6 +2323,22 @@ select:focus {
   border-left: 16px solid #edb021;
 }
 
+.searchs__offer-postav {
+  margin-bottom: 10px;
+}
+
+.searchs__offer-postav h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #000000 !important;
+  margin: 0;
+  padding: 0;
+  background: #dcdcdc !important;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 16px solid #969696 !important;
+}
+
 .searchs__offer-lists-main {
   margin-bottom: 10px;
 }
@@ -2331,6 +2359,9 @@ select:focus {
 }
 
 .searchs__offer-lists-main ul li {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
   text-align: center;
   -ms-flex-preferred-size: 10%;
       flex-basis: 10%;
@@ -2343,12 +2374,18 @@ select:focus {
   padding: 0;
   margin: 0;
   margin-bottom: 5px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 .searchs__offer-lists-main ul li p {
   font-size: 14px;
   padding: 0;
   margin: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 .searchs__offer-lists-second p {
@@ -2358,6 +2395,21 @@ select:focus {
 
 .searchs__offer-lists-second h4 {
   font-size: 14px;
+}
+
+.searchs__offer-lists-dealMore ul {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.searchs__offer-lists-dealMore ul li h5 {
+  margin-bottom: 10px;
+}
+
+.searchs__offer-lists-dealMore p img {
+  max-width: 100%;
+  height: auto;
 }
 
 .searchs__offer-liststwo .searchs__offer-lists-main {
@@ -2428,6 +2480,117 @@ select:focus {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.searchs__offer-total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.searchs__offer-total-wrap {
+  padding: 5px;
+  border: 1px solid #000000;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.searchs__offer-total-wrap p {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.searchs__offer-total-wrap hr {
+  margin: 5px;
+  color: #000000;
+  background: #000000;
+}
+
+.searchs__offer-chat-wrap {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.searchs__offer-chat-wrap-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  background: #c4c4c4;
+  margin-bottom: 10px;
+}
+
+.searchs__offer-chat-wrap-title p {
+  margin: 0;
+  padding: 0;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+.searchs__offer-chat-wrap-title hr {
+  margin: 0;
+  width: 100%;
+  background: #000000;
+}
+
+.searchs__offer-chat-wrap-main {
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.searchs__offer-chat-wrap-main-fuser {
+  border-radius: 5px;
+  width: 70%;
+  margin-right: auto;
+  background: #edb021;
+  padding: 5px;
+}
+
+.searchs__offer-chat-wrap-main-tuser {
+  border-radius: 5px;
+  width: 70%;
+  margin-left: auto;
+  text-align: right;
+  background: #dcdcdc;
+  padding: 5px;
+}
+
+.searchs__offer-chat-msg textarea {
+  padding: 5px;
+  width: 100%;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.searchs__offer-chat-msg .mainBtn {
+  border: 1px solid #000000;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: auto;
+  display: block;
 }
 
 .searchs__contact h3 {
@@ -2511,6 +2674,52 @@ select:focus {
   .searchs__title-cont-desc p {
     font-size: 10px;
   }
+  .searchs__dealmore {
+    padding: 0 20px;
+  }
+  .searchs .searchs__offer-lists-dealMore ul {
+    height: 200px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+  }
+  .searchs .searchs__offer-lists-dealMore ul:after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 26vw;
+    height: 80%;
+    width: 1px;
+    background: #edb021;
+  }
+  .searchs .searchs__offer-lists-dealMore ul:before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 65vw;
+    height: 80%;
+    width: 1px;
+    background: #edb021;
+  }
+  .searchs .searchs__offer-lists-dealMore ul li:last-child {
+    margin-bottom: auto;
+  }
+  .searchs .dealMore-post ul:after {
+    display: none;
+  }
+  .searchs .dealMore-post ul:before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    height: 80%;
+    width: 1px;
+    background: #edb021;
+  }
+  .searchs .dealMore-post ul li {
+    padding: 5px 10px;
+    width: 50%;
+  }
   .searchs__offer {
     padding: 0 20px;
   }
@@ -2530,6 +2739,28 @@ select:focus {
   }
   .searchs__pay {
     padding: 0 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .searchs .dealMore-post ul {
+    height: 290px;
+  }
+  .searchs .dealMore-post ul:after {
+    display: none;
+  }
+  .searchs .dealMore-post ul:before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    height: 80%;
+    width: 1px;
+    background: #edb021;
+  }
+  .searchs .dealMore-post ul li {
+    padding: 5px 10px;
+    width: 50%;
   }
 }
 

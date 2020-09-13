@@ -1,5 +1,12 @@
 .searchs
   padding: 20px 0
+  &__dealmore
+    margin-bottom: 20px
+    &-btn
+      .mainBtn
+        padding: 5px
+        text-transform: uppercase
+        background: $main_rgb
   &__title
     display: flex
     justify-content: center
@@ -65,6 +72,18 @@
         padding: 10px
         border-radius: $br-radius
         border-left: 16px solid $main_rgb
+    &-postav
+      margin-bottom: 10px
+      h3
+        text-transform: uppercase
+        font-size: 14px
+        color: $main_color !important
+        margin: 0
+        padding: 0
+        background: $main_bg3 !important
+        padding: 10px
+        border-radius: $br-radius
+        border-left: 16px solid $main_colorD !important
     &-lists
       &-main
         margin-bottom: 10px
@@ -77,6 +96,9 @@
           justify-content: space-around
           align-items: center
           li
+            word-break: break-word
+            overflow-wrap: break-word
+            overflow-wrap: anywhere
             text-align: center
             flex-basis: 10%
             color: $main_color
@@ -86,16 +108,32 @@
               padding: 0
               margin: 0
               margin-bottom: 5px
+              word-break: break-word
+              overflow-wrap: break-word
+              overflow-wrap: anywhere
             p
               font-size: 14px
               padding: 0
               margin: 0
+              word-break: break-word
+              overflow-wrap: break-word
+              overflow-wrap: anywhere
       &-second
         p
           margin: 0 0 5px 0
           padding: 0
         h4
           font-size: 14px
+      &-dealMore
+        ul
+          align-items: stretch
+          li
+            h5
+              margin-bottom: 10px
+        p
+          img
+            max-width: 100%
+            height: auto
     &-liststwo
       .searchs__offer-lists-main
         margin-bottom: 10px
@@ -138,6 +176,76 @@
       &-btn
         display: flex
         justify-content: flex-end
+    &-total
+      display: flex
+      justify-content: flex-end
+      margin-bottom: 10px
+      &-wrap
+        padding: 5px
+        border: 1px solid $main_color
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: $br-radius
+        p
+          font-size: 14px
+          margin: 0
+          padding: 0
+        hr
+          margin: 5px
+          color: $main_color
+          background: $main_color
+    &-chat
+      &-wrap
+        border: 1px solid $main_color
+        border-radius: $br-radius
+        margin-bottom: 10px
+        &-title
+          display: flex
+          justify-content: center
+          align-items: center
+          padding: 10px
+          background: #c4c4c4
+          margin-bottom: 10px
+          p
+            margin: 0
+            padding: 0
+            margin-right: 5px
+            text-transform: uppercase
+          hr
+            margin: 0
+            width: 100%
+            background: $main_color
+        
+        &-main
+          padding: 5px
+          display: flex
+          flex-direction: column
+          justify-content: center
+          &-fuser
+            border-radius: $br-radius
+            width: 70%
+            margin-right: auto
+            background: $main_rgb
+            padding: 5px
+          &-tuser
+            border-radius: $br-radius
+            width: 70%
+            margin-left: auto
+            text-align: right
+            background: $main_bg3
+            padding: 5px
+      &-msg
+        textarea
+          padding: 5px
+          width: 100%
+          border: 1px solid $main_color
+          border-radius: $br-radius
+          margin-bottom: 10px
+        .mainBtn
+          border: 1px solid $main_color
+          text-transform: uppercase
+          font-size: 14px
+          margin-left: auto
+          display: block
   &__contact
     h3
       border-left: 16px solid $main_color
@@ -197,6 +305,47 @@
         &-desc
           p
             font-size: 10px
+    &__dealmore
+      padding: 0 20px
+    .searchs__offer-lists-dealMore
+      ul
+        height: 200px
+        flex-wrap: wrap
+        position: relative
+        &:after
+          content: ''
+          position: absolute
+          top: 10%
+          left: 26vw
+          height: 80%
+          width: 1px
+          background: $main_rgb
+        &:before
+          content: ''
+          position: absolute
+          top: 10%
+          left: 65vw
+          height: 80%
+          width: 1px
+          background: $main_rgb
+        li
+          &:last-child
+            margin-bottom: auto
+    .dealMore-post
+      ul 
+        &:after
+          display: none
+        &:before
+          content: ''
+          position: absolute
+          top: 10%
+          left: 50%
+          height: 80%
+          width: 1px
+          background: $main_rgb
+        li
+          padding: 5px 10px
+          width: 50%
     &__offer
       padding: 0 20px
       &-title
@@ -211,4 +360,20 @@
               margin-bottom: 10px
     &__pay
       padding: 0 20px
-              
+  @media(max-width: 500px)
+    .dealMore-post
+      ul 
+        height: 290px
+        &:after
+          display: none
+        &:before
+          content: ''
+          position: absolute
+          top: 10%
+          left: 50%
+          height: 80%
+          width: 1px
+          background: $main_rgb
+        li
+          padding: 5px 10px
+          width: 50%

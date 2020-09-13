@@ -114,12 +114,15 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     };
+    listHeightCHeck();
     slickInit();
+
     $('.slick-wrap').on('afterChange', function () {
         listHeightCHeck();
     });
+
     listHeightCHeck();
-   
+
     
     window.addEventListener('resize', () => {
         listHeightCHeck();
