@@ -3073,6 +3073,7 @@ select:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    min-height: auto;
   }
   .create-deal-cont-wrap-steps {
     -webkit-box-orient: horizontal;
