@@ -16,7 +16,8 @@
 	<link rel="shortcut icon" href="" />
 
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">	
+	<link rel="stylesheet" href="libs/mpopup/magnific-popup.css">
 	<link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -137,9 +138,44 @@
 		<div class="searchs__dealmore">
 			<div class="searchs__dealmore-btn">
 				<a href="#0" class="mainBtn">Отправил</a>
-				<a href="#0" class="mainBtn">Открыть спор</a>
+				<a href="#popupdeal" class="mainBtn mpopup">Открыть спор</a>
 			</div>
 			<!-- /.searchs__dealmore-btn -->
+			<div class="mpopup-window mfp-hide white-popup-block" id="popupdeal">
+				<div class="mpopup-window-header">
+					<p>id сделки <span>45678985</span></p>
+					<span class="mpopup-window-header-close popup-close"></span>
+				</div>
+				<!-- /.mpopup-window-header -->
+				<div class="mpopup-window-main">
+					<form>
+						<textarea name="mpopupMsg" rows="5" placeholder="Напишите о причине спора, с вами свяжется администратор сайта"></textarea>
+						<div class="mpopup-window-main-email">
+							<p>Укажите удобный для вас способ связи</p>
+							<input type="text" name="connect" placeholder="Телефон/Email">
+						</div>
+						<!-- /.mpopup-window-main-email -->
+						<div class="mpopup-window-main-btn">
+							<button class="mainBtn sentTest">отправить</button>
+						</div>
+						<!-- /.mpopup-window-main-btn -->
+					</form>
+				</div>
+				<!-- /.mpopup-window-main -->
+			</div>
+			<!-- /.mpopup-window -->
+			<div class="mpopup-window mfp-hide white-popup-block" id="popupdeal-end">
+				<div class="mpopup-window-header">
+					<p>id сделки <span>45678985</span></p>
+					<span class="mpopup-window-header-close popup-close"></span>
+				</div>
+				<!-- /.mpopup-window-header -->
+				<div class="mpopup-window-main">
+					<h3>hello</h3>
+				</div>
+				<!-- /.mpopup-window-main -->
+			</div>
+			<!-- /.mpopup-window -->
 		</div>
 		<!-- /.searchs__dealmore -->
 		<div class="searchs__offer">
@@ -354,7 +390,8 @@
 
 	<script src="libs/jquery-3.4.1.min.js"></script>
 	<script src="libs/bootstrap/bootstrap.min.js"></script>
-	<script src="libs/slick/slick.min.js"></script>
+		<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/mpopup/jquery.magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
 
 </body>

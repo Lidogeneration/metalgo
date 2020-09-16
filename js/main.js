@@ -127,4 +127,22 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', () => {
         listHeightCHeck();
     });
+
+    $(function () {
+        $('.mpopup').magnificPopup({
+            type: 'inline',
+            preloader: false,
+            focus: '#username'
+        });
+    });
+    const mpopupClose = document.querySelectorAll('.popup-close');
+    if(mpopupClose.length > 0) {
+        mpopupClose.forEach(key => {
+            key.addEventListener('click', () => {
+                $.magnificPopup.close();
+            });
+        });
+
+    }
+
 });

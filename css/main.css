@@ -2785,5 +2785,120 @@ select:focus {
 
 /* --- button start end ------------------------------------------------*/
 /* --- forms Start ------------------------------------------------*/
+.mpopup-window {
+  display: block;
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+  background: #dcdcdc;
+  border-radius: 5px;
+}
+
+.mpopup-window-header {
+  background: #000000;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.mpopup-window-header p {
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.mpopup-window-header-close {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.mpopup-window-header-close:after {
+  content: '';
+  position: absolute;
+  top: 38%;
+  left: 0;
+  width: 15px;
+  height: 3px;
+  background: #edb021;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.mpopup-window-header-close:before {
+  content: '';
+  position: absolute;
+  bottom: 52%;
+  left: 0;
+  width: 15px;
+  height: 3px;
+  background: #edb021;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.mpopup-window-main {
+  padding: 0 10px 10px 10px;
+}
+
+.mpopup-window-main textarea {
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.mpopup-window-main ::-webkit-input-placeholder {
+  color: #dcdcdc;
+  font-size: 14px;
+}
+
+.mpopup-window-main :-ms-input-placeholder {
+  color: #dcdcdc;
+  font-size: 14px;
+}
+
+.mpopup-window-main ::-ms-input-placeholder {
+  color: #dcdcdc;
+  font-size: 14px;
+}
+
+.mpopup-window-main ::placeholder {
+  color: #dcdcdc;
+  font-size: 14px;
+}
+
+.mpopup-window-main-email p {
+  margin: 0 0 5px 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.mpopup-window-main-email input {
+  border-radius: 5px;
+  border: 1px solid #000000;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.mpopup-window-main-btn .mainBtn {
+  border: 1px solid #000000;
+  display: block;
+  margin-left: auto;
+}
+
 /* --- forms end ------------------------------------------------*/
 /*# sourceMappingURL=main.css.map */

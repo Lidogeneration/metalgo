@@ -1,2 +1,72 @@
 /* --- forms Start ------------------------------------------------*/
+.mpopup-window
+  display: block
+  width: 500px
+  max-width: 100%
+  margin: 0 auto
+  background: $main_bg3
+  border-radius: $br-radius
+  &-header
+    background: $main_color
+    padding: 5px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-top-left-radius: $br-radius
+    border-top-right-radius: $br-radius
+    margin-bottom: 10px
+    p
+      text-transform: uppercase
+      color: $main_white
+      margin: 0
+      padding: 0
+    &-close
+      position: relative
+      display: block
+      width: 30px
+      height: 30px
+      cursor: pointer
+      &:after
+        content: ''
+        position: absolute
+        top: 38%
+        left: 0
+        width: 15px
+        height: 3px
+        background: $main_rgb
+        transform: rotate(-45deg)
+      &:before
+        content: ''
+        position: absolute
+        bottom: 52%
+        left: 0
+        width: 15px
+        height: 3px
+        background: $main_rgb
+        transform: rotate(45deg)
+  &-main
+    padding: 0 10px 10px 10px
+    textarea
+      padding: 5px
+      width: 100%
+      margin-bottom: 5px
+      border-radius: $br-radius
+    ::placeholder
+      color: $main_bg3
+      font-size: 14px
+    &-email
+      p
+        margin: 0 0 5px 0
+        padding: 0
+        font-size: 14px
+      input
+        border-radius: $br-radius
+        border: 1px solid $main_color
+        margin-bottom: 5px
+        padding: 5px
+    &-btn
+      .mainBtn
+        border: 1px solid $main_color
+        display: block
+        margin-left: auto
 /* --- forms end ------------------------------------------------*/
