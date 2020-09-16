@@ -3062,6 +3062,10 @@ select:focus {
   color: #edb021;
 }
 
+.create-deal .mydeal__banner {
+  margin-top: 20px;
+}
+
 @media (max-width: 992px) {
   .create-deal {
     padding: 20px;
