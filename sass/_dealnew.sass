@@ -1,0 +1,200 @@
+.create-deal
+  padding: 20px 0
+  &-cont
+    background: $main_bg3
+    border-radius: $br-radius
+    padding-bottom: 20px
+    &-head
+      background: #000
+      padding: 5px
+      border-left: 5px solid $main_rgb
+      border-top-left-radius: $br-radius
+      border-top-right-radius: $br-radius
+      margin-bottom: 20px
+      p
+        padding: 0
+        margin: 0
+        font-size: 16px
+        color: $main_rgb
+        text-transform: uppercase
+    &-wrap
+      display: flex
+      justify-content: space-around
+      min-height: 450px
+      &-steps
+        flex-basis: 25%
+        display: flex
+        flex-direction: column
+        align-items: center
+        .steps-item-active
+          span
+            background: $main_rgb
+        .steps-item-end
+          span
+            background: $main_rgb
+            color: $main_color
+        &-last
+          &:after
+            display: none
+        &-item
+          display: flex
+          align-items: center
+          width: 250px
+          margin-bottom: 20px
+          position: relative
+          &:after
+            content: ''
+            position: absolute
+            bottom: -15px
+            left: 20px
+            width: 1px  
+            height: 10px
+            background: $main_color
+          &-number
+            margin-right: 5px
+            span
+              display: flex
+              width: 40px
+              height: 40px
+              background: $main_bgD
+              display: flex
+              justify-content: center
+              align-items: center
+              border-radius: 100%
+              color: $main_white
+          &-text
+            p
+              color: $main_bg
+              margin: 0
+              padding: 0
+      &-main
+        flex-basis: 50%
+        position: relative
+        form
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          height: 100%
+        .main-it-active
+          position: relative
+          opacity: 1
+          transition: .3s
+          z-index: 999
+        &-it
+          opacity: 0
+          transition: .3s
+          position: absolute
+          top: 0
+          left: 0
+          margin-bottom: 20px
+          &-radio
+            input, label
+              cursor: pointer
+          p
+            margin: 0 0 10px 0
+            padding: 0
+            font-size: 12px
+          h3
+            font-size: 14px
+            margin: 0 0 10px 0
+            padding: 0
+          input[type=text], input[type=number]
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            padding: 5px
+            width: 100% 
+            margin-bottom: 5px
+            border-radius: $br-radius
+            border: 1px solid $main_color
+          &-inc
+            input
+              display: none
+            label
+              border-radius: $br-radius
+              background: none
+              transition: .3s
+              cursor: pointer
+              margin: 5px
+              text-transform: uppercase
+              font-size: 12px
+              img
+                margin-right: 5px
+                max-width: 100%
+                height: auto
+              &:hover
+                background: none
+                transition: .3s
+          &-list
+            flex-basis: 50%
+            h5
+              margin: 0 0 5px 0
+              padding: 0
+              font-size: 14px
+            p
+              margin: 0 0 5px 0
+              padding: 0
+              font-size: 12px
+          &-total
+            flex-basis: 100%
+            ul
+              border-radius: $br-radius
+              border: 1px solid $main_color
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+              background: $main_white
+              display: flex
+              flex-direction: column
+              flex-wrap: wrap
+              list-style: none
+              padding: 5px
+              margin: 0
+              width: 100%
+              height: 130px
+              li
+                flex-basis: 30%
+                p
+                  font-size: 12px
+                  padding: 0
+                  margin: 0 0 5px 0
+                h5
+                  font-size: 14px
+                  padding: 0
+                  margin: 0 0 5px 0
+                img
+                  margin-left: 5px
+                  height: 20px
+                  width: auto
+        &-btn
+          z-index: 9999999999999
+          display: flex
+          justify-content: flex-end
+          button
+            margin: 5px
+            border: 1px solid $main_color
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            &:nth-child(2)
+              background: $main_rgb
+            &:hover
+              background: $main_bg3
+              color: $main_rgb
+  @media(max-width: 992px) 
+    padding: 20px
+    &-cont
+      &-wrap
+        word-break: break-word
+        padding: 5px
+        flex-direction: column
+        &-steps
+          flex-direction: row
+          flex-wrap: wrap
+          &-item
+            flex-basis: 50%
+            width: 50%
+            &:after
+              display: none
+            &-text
+              font-size: 11px
+        &-main-it-total
+          ul
+            height: auto
+            li
+              flex-basis: 100%
+              padding: 5px

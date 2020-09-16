@@ -143,4 +143,47 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    ///steps
+    const nextBtn = document.querySelector('.btn-m-next'),
+        prevBtn = document.querySelector('.btn-m-prev'),
+        stepsNumber = document.querySelectorAll('.steps-item'),
+        mainItem = document.querySelectorAll('.main-it');
+    let counterSteps = 0;
+    const stepsInit = (count) => {
+        stepsNumber.forEach((key, i ) => {
+            mainItem[i].classList.remove('main-it-active');
+            key.classList.remove('steps-item-active', 'steps-item-end');
+            if (i > count && i != 0) {
+                key.classList.remove('steps-item-active', 'steps-item-end');
+            } else if ( i ==  count) {
+                key.classList.add('steps-item-active');
+                mainItem[i].classList.add('main-it-active');
+            } else if ( i < count ) {
+                key.classList.remove('steps-item-active');
+                key.classList.add('steps-item-end');
+            }
+        });
+    };
+    stepsInit(counterSteps);
+
+    nextBtn.addEventListener('click', (e) => {
+        if(counterSteps < stepsNumber.length-1) {
+            counterSteps++;
+            stepsInit(counterSteps);
+        } else if (counterSteps == stepsNumber.length-1) {
+            e.target.setAttribute('type', 'sybmit');
+        }
+        if(counterSteps == stepsNumber.length-1){
+            e.target.textContent = 'Создать';
+        }
+    });
+    prevBtn.addEventListener('click', () => {
+        if(counterSteps > 0 ) {
+            counterSteps--;
+            stepsInit(counterSteps);
+        }
+        
+    });
+
 });
