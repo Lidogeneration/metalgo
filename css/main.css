@@ -2785,6 +2785,11 @@ select:focus {
 
 /* --- button start end ------------------------------------------------*/
 /* --- forms Start ------------------------------------------------*/
+.mpopup-window-border {
+  border: 1px solid #edb021;
+  padding: 10px;
+}
+
 .mpopup-window {
   display: block;
   width: 500px;
@@ -2852,6 +2857,13 @@ select:focus {
 
 .mpopup-window-main {
   padding: 0 10px 10px 10px;
+  position: relative;
+}
+
+.mpopup-window-main .popup-close {
+  position: absolute;
+  right: -20px;
+  top: -10px;
 }
 
 .mpopup-window-main textarea {
@@ -2879,6 +2891,27 @@ select:focus {
 .mpopup-window-main ::placeholder {
   color: #dcdcdc;
   font-size: 14px;
+}
+
+.mpopup-window-main h4 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.mpopup-window-main h5 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.mpopup-window-main hr {
+  margin: 5px auto;
+  width: 60%;
+  background-color: #edb021;
 }
 
 .mpopup-window-main-email p {

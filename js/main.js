@@ -142,7 +142,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 $.magnificPopup.close();
             });
         });
-
     }
-
 });
