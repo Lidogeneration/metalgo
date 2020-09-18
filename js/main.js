@@ -132,7 +132,8 @@ document.addEventListener('DOMContentLoaded', () => {
         $('.mpopup').magnificPopup({
             type: 'inline',
             preloader: false,
-            focus: '#username'
+            focus: '#username',
+            showCloseBtn: false
         });
     });
     const mpopupClose = document.querySelectorAll('.popup-close');
@@ -166,24 +167,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
     stepsInit(counterSteps);
-
-    nextBtn.addEventListener('click', (e) => {
-        if(counterSteps < stepsNumber.length-1) {
-            counterSteps++;
-            stepsInit(counterSteps);
-        } else if (counterSteps == stepsNumber.length-1) {
-            e.target.setAttribute('type', 'sybmit');
-        }
-        if(counterSteps == stepsNumber.length-1){
-            e.target.textContent = 'Создать';
-        }
-    });
-    prevBtn.addEventListener('click', () => {
-        if(counterSteps > 0 ) {
-            counterSteps--;
-            stepsInit(counterSteps);
-        }
-        
-    });
-
+    if(nextBtn) {
+        nextBtn.addEventListener('click', (e) => {
+            if(counterSteps < stepsNumber.length-1) {
+                counterSteps++;
+                stepsInit(counterSteps);
+            } else if (counterSteps == stepsNumber.length-1) {
+                e.target.setAttribute('type', 'sybmit');
+            }
+            if(counterSteps == stepsNumber.length-1){
+                e.target.textContent = 'Создать';
+            }
+        });
+    }
+    if(prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            if(counterSteps > 0 ) {
+                counterSteps--;
+                stepsInit(counterSteps);
+            }
+            
+        });
+    }
 });

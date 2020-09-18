@@ -69,7 +69,7 @@
 					</div>
 					<!-- /.header__nav-cont-calc-wrap-img -->
 					<div class="header__nav-cont-calc-wrap-desc">
-						<a href="#">Калькулятор металла</a>
+						<a href="#popupcalc" class="mpopup">Калькулятор металла</a>
 					</div>
 					<!-- /.header__nav-cont-calc-wrap-desc -->
 				</div>
@@ -132,6 +132,61 @@
 		<!-- /.header__nav-cont -->
 	</nav>
 </header>
+
+<div class="mpopup-window mfp-hide white-popup-block" id="popupcalc">
+	<div class="mpopup-window-header">
+		<p>Калькулятор металла</p>
+		<span class="mpopup-window-header-close popup-close"></span>
+	</div>
+	<!-- /.mpopup-window-header -->
+	<div class="mpopup-window-main">
+		<form>
+			<div class="mpopup-window-main-calc">
+				<div class="mpopup-window-main-calc-title">
+					<h4>Лист</h4>
+				</div>
+				<!-- /.mpopup-window-main-calc-title -->
+				<div class="mpopup-window-main-calc-item">
+					<div class="mpopup-window-main-calc-item-sel">
+						<select name="metall" id="category">
+							<option value="Категонии" disabled selected>Выберите металл</option>
+							<option value="opt01">opt01</option>
+							<option value="opt02">opt02</option>
+							<option value="opt03">opt03</option>
+						</select>
+						<select name="category" id="category">
+							<option value="marks" disabled selected>Выберите марку</option>
+							<option value="opt01">opt01</option>
+							<option value="opt02">opt02</option>
+							<option value="opt03">opt03</option>
+						</select>
+					</div>
+					<!-- /.mpopup-window-main-calc-item-sel -->
+					<div class="mpopup-window-main-calc-item-box">
+						<h5>Тип проката</h5>
+						<div class="mpopup-window-main-calc-item-box-img">
+							<a><svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<line x1="2.5" y1="1.09279e-07" x2="2.5" y2="27" stroke="black" stroke-width="5"/>
+								<line y1="24.5" x2="27" y2="24.5" stroke="black" stroke-width="5"/>
+								</svg>
+								</a>
+						</div>
+						<!-- /.mpopup-window-main-calc-item-box-img -->
+					</div>
+					<!-- /.mpopup-window-main-calc-item-box -->
+				</div>
+				<!-- /.mpopup-window-main-calc-item -->
+			</div>
+			<!-- /.mpopup-window-main-calc -->
+			<div class="mpopup-window-main-btn">
+				<button class="mainBtn sentTest">рассчитать</button>
+			</div>
+			<!-- /.mpopup-window-main-btn -->
+		</form>
+	</div>
+	<!-- /.mpopup-window-main -->
+</div>
+<!-- /.mpopup-window -->
 
 <section class="offer">
 	<div class="offer__cont global-cont">
