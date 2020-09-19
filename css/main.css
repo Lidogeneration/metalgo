@@ -3108,6 +3108,226 @@ select:focus {
   }
 }
 
+.usermap {
+  padding: 20px 0;
+}
+
+.usermap-cont {
+  background: #dcdcdc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.usermap-cont-title {
+  margin-bottom: 10px;
+}
+
+.usermap-cont-title h2 {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  color: #edb021;
+  border-left: 10px solid #edb021;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.usermap-cont-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.usermap-cont-list-item {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  width: 45%;
+  padding: 5px 10px;
+}
+
+.usermap-cont-list-item:first-child {
+  border-right: 1px solid #edb021;
+}
+
+.usermap-cont-list-item ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.usermap-cont-list-item ul li {
+  margin-bottom: 5px;
+}
+
+.usermap-cont-list-item ul li p {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.usermap-cont-list-item ul li h4 {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.usermap-cont-btn {
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: right;
+}
+
+.usermap-cont-btn a {
+  display: inline-block;
+}
+
+.usermap-cont-map {
+  padding: 10px;
+}
+
+.usermap-cont-map iframe {
+  border: 1px solid #000000;
+  width: 100%;
+}
+
+.usermap-cont-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 10px;
+  padding: 20px 0;
+  border-top: 1px solid #edb021;
+  border-bottom: 1px solid #edb021;
+}
+
+.usermap-cont-img-item {
+  width: 17%;
+  -ms-flex-preferred-size: 17%;
+      flex-basis: 17%;
+  margin-bottom: 10px;
+}
+
+.usermap-cont-img-item img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.usermap-cont-rev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.usermap-cont-rev-msg {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  width: 50%;
+}
+
+.usermap-cont-rev-msg-title h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.usermap-cont-rev-msg-item {
+  border: 1px solid #000000;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  background: #edb021;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.usermap-cont-rev-msg-item h5 {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.usermap-cont-rev-msg-item span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.usermap-cont-rev-msg-item p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.usermap-cont-rev-msg-more {
+  margin: 15px 0;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+}
+
+.usermap-cont-rev-msg-text {
+  padding-bottom: 10px;
+}
+
+.usermap-cont-rev-msg-text textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.usermap-cont-rev-msg-text button {
+  display: block;
+  margin-left: auto;
+}
+
+.usermap-cont-rev-stars {
+  text-align: center;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  width: 30%;
+}
+
+.usermap-cont-rev-stars h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 992px) {
+  .usermap-cont-img-item {
+    width: 33%;
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
+  .usermap-cont-rev {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .usermap-cont-rev-msg {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .usermap-cont-rev-stars {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+}
+
 /* --- button start Start ------------------------------------------------*/
 .mainBtn {
   border: 1px solid #edb021;
@@ -3121,6 +3341,26 @@ select:focus {
 }
 
 .mainBtn:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: #edb021;
+  color: #ffffff;
+}
+
+.mainBtnB {
+  border: 1px solid #000000;
+  background: none;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  max-width: 100%;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainBtnB:hover {
   -webkit-transition: .3s;
   transition: .3s;
   background: #edb021;
