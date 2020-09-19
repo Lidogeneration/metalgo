@@ -136,11 +136,28 @@ document.addEventListener('DOMContentLoaded', () => {
             showCloseBtn: false
         });
     });
-    const mpopupClose = document.querySelectorAll('.popup-close');
+    const mpopupClose = document.querySelectorAll('.popup-close'),
+        forPopupUl = document.querySelectorAll('.forPopup');
     if(mpopupClose.length > 0) {
         mpopupClose.forEach(key => {
             key.addEventListener('click', () => {
                 $.magnificPopup.close();
+            });
+        });
+    }
+    if(forPopupUl.length > 0) {
+        forPopupUl.forEach(key => {
+            key.addEventListener('click', ()=> {
+                console.log('32');
+                $.magnificPopup.open({
+                    items: {
+                        src: '#popupdeal'
+                    },
+                    type: 'inline',
+                    preloader: false,
+                    focus: '#username',
+                    showCloseBtn: false
+                });
             });
         });
     }
