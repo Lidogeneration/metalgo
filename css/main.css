@@ -3277,5 +3277,177 @@ select:focus {
   margin-left: auto;
 }
 
+.mpopup-window-main-calc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mpopup-window-main-calc-title {
+  width: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding-left: 100px;
+}
+
+.mpopup-window-main-calc-title h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.mpopup-window-main-calc-item {
+  width: 45%;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+.mpopup-window-main-calc-item-in input {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #969696;
+  border: 1px solid #969696;
+}
+
+.mpopup-window-main-calc-item h5 {
+  text-align: left;
+}
+
+.mpopup-window-main-calc-item-sel select {
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #969696;
+}
+
+.mpopup-window-main-calc-item-sel ::-webkit-input-placeholder {
+  color: #969696;
+}
+
+.mpopup-window-main-calc-item-sel :-ms-input-placeholder {
+  color: #969696;
+}
+
+.mpopup-window-main-calc-item-sel ::-ms-input-placeholder {
+  color: #969696;
+}
+
+.mpopup-window-main-calc-item-sel ::placeholder {
+  color: #969696;
+}
+
+.mpopup-window-main-calc-item-box h5 {
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.mpopup-window-main-calc-item-box-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mpopup-window-main-calc-item-box-img a {
+  background: #ffffff;
+  padding: 5px;
+  display: inline-block;
+  width: 17%;
+  -ms-flex-preferred-size: 17%;
+      flex-basis: 17%;
+  border-radius: 5px;
+  border: 1px solid #edb021;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.mpopup-window-main-calc-item-box-img a:nth-of-type(1) svg line {
+  stroke: #000000;
+}
+
+.mpopup-window-main-calc-item-box-img a:nth-of-type(2) svg rect {
+  fill: #000000;
+}
+
+.mpopup-window-main-calc-item-box-img a:nth-of-type(3) svg circle {
+  stroke: #000000;
+}
+
+.mpopup-window-main-calc-item-box-img .item-box-active {
+  background: #000000;
+}
+
+.mpopup-window-main-calc-item-box-img .item-box-active svg line {
+  stroke: #edb021 !important;
+}
+
+.mpopup-window-main-calc-item-box-img .item-box-active svg rect {
+  fill: #edb021 !important;
+}
+
+.mpopup-window-main-calc-item-box-img .item-box-active svg circle {
+  stroke: #edb021 !important;
+}
+
+.mpopup-window-main-calc-item-box-img .item-box-active svg path {
+  fill: #edb021;
+}
+
+.mpopup-window-main-calc-item-box-img .item-box-active .item-box-active-fillnone circle {
+  fill: #edb021 !important;
+}
+
+.mpopup-window-main-calc-item-box-img .item-box-active .item-box-active-fillin rect {
+  stroke: #edb021 !important;
+  fill: #000000 !important;
+}
+
+.mpopup-window-main-calc-wiev {
+  padding: 20px 10px;
+  width: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.mpopup-window-main-calc-wiev-wrap img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+}
+
 /* --- forms end ------------------------------------------------*/
 /*# sourceMappingURL=main.css.map */
