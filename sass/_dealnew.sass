@@ -232,6 +232,55 @@
             &:hover
               background: $main_bg3
               color: $main_rgb
+        &-myprofile
+          &-input
+            label
+              display: block
+              font-size: 12px
+            input
+              border: 1px solid $main_color
+              border-radius: $br-radius
+              padding: 5px
+              width: 100%
+              margin-bottom: 10px
+            &-wrap
+              position: relative
+              input
+                padding-left: 30px
+              .myprofile-editIn
+                cursor: pointer
+                z-index: 999
+                position: absolute
+                left: 5px
+                top: 38%
+                transform: translateY(-50%)
+                img
+                  width: 20px
+                  height: 20px
+              .myprofile-morIn
+                cursor: pointer
+                z-index: 999
+                position: absolute
+                right: -30px
+                top: 38%
+                transform: translateY(-50%)
+                img
+                  width: 25px
+                  height: 25px
+          &-downBtn
+            display: inline-block
+            margin: 10px 0
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            padding: 10px
+            margin-bottom: 5px
+            border-radius: $br-radius
+            border: 1px solid $main_color
+            background: $main_white
+            font-size: 12px
+            img
+              margin-right: 5px
+              height: 50%
+              width: auto        
   .mydeal__banner
     margin-top: 20px
   @media(max-width: 992px) 
@@ -257,6 +306,8 @@
               margin-top: 5px
               font-size: 11px
         &-main
+          &-myprofile
+            padding-right: 30px
           &-it
             &-tarrif
               h4

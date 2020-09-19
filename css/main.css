@@ -3150,6 +3150,76 @@ select:focus {
   color: #edb021;
 }
 
+.create-deal-cont-wrap-main-myprofile-input label {
+  display: block;
+  font-size: 12px;
+}
+
+.create-deal-cont-wrap-main-myprofile-input input {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.create-deal-cont-wrap-main-myprofile-input-wrap {
+  position: relative;
+}
+
+.create-deal-cont-wrap-main-myprofile-input-wrap input {
+  padding-left: 30px;
+}
+
+.create-deal-cont-wrap-main-myprofile-input-wrap .myprofile-editIn {
+  cursor: pointer;
+  z-index: 999;
+  position: absolute;
+  left: 5px;
+  top: 38%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.create-deal-cont-wrap-main-myprofile-input-wrap .myprofile-editIn img {
+  width: 20px;
+  height: 20px;
+}
+
+.create-deal-cont-wrap-main-myprofile-input-wrap .myprofile-morIn {
+  cursor: pointer;
+  z-index: 999;
+  position: absolute;
+  right: -30px;
+  top: 38%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.create-deal-cont-wrap-main-myprofile-input-wrap .myprofile-morIn img {
+  width: 25px;
+  height: 25px;
+}
+
+.create-deal-cont-wrap-main-myprofile-downBtn {
+  display: inline-block;
+  margin: 10px 0;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  background: #ffffff;
+  font-size: 12px;
+}
+
+.create-deal-cont-wrap-main-myprofile-downBtn img {
+  margin-right: 5px;
+  height: 50%;
+  width: auto;
+}
+
 .create-deal .mydeal__banner {
   margin-top: 20px;
 }
@@ -3194,6 +3264,9 @@ select:focus {
     text-align: center;
     margin-top: 5px;
     font-size: 11px;
+  }
+  .create-deal-cont-wrap-main-myprofile {
+    padding-right: 30px;
   }
   .create-deal-cont-wrap-main-it-tarrif h4 {
     white-space: nowrap;
