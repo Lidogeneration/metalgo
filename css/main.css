@@ -2823,6 +2823,54 @@ select:focus {
           align-items: center;
 }
 
+.create-deal-cont-wrap-steps-mymsg-item {
+  border: 1px solid #000000;
+  background: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.create-deal-cont-wrap-steps-mymsg-item h5 {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.create-deal-cont-wrap-steps-mymsg-item p {
+  margin: 0;
+  padding: 0;
+}
+
+.create-deal-cont-wrap-steps-mymsg-item hr {
+  margin: 5px auto;
+}
+
+.create-deal-cont-wrap-steps-mymsg-item-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #edb021;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+}
+
+.create-deal-cont-wrap-steps-mymsg .mymsg-item-active {
+  border: 1px solid #edb021;
+}
+
 .create-deal-cont-wrap-steps img {
   width: 100%;
 }
@@ -3292,6 +3340,125 @@ select:focus {
   width: auto;
 }
 
+.create-deal-cont-wrap-main-chat-wrap {
+  height: 350px;
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.create-deal-cont-wrap-main-chat-wrap-date {
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.create-deal-cont-wrap-main-chat-wrap-date span {
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  position: relative;
+}
+
+.create-deal-cont-wrap-main-chat-wrap-date span:after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -1005px;
+  width: 1000px;
+  height: 1px;
+  background: #000000;
+}
+
+.create-deal-cont-wrap-main-chat-wrap-date span:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -1005px;
+  width: 1000px;
+  height: 1px;
+  background: #000000;
+}
+
+.create-deal-cont-wrap-main-chat-wrap-msguser {
+  background: #edb021;
+  width: 60%;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.create-deal-cont-wrap-main-chat-wrap-msguser p {
+  margin: 0;
+  padding: 0;
+}
+
+.create-deal-cont-wrap-main-chat-wrap-msguser span {
+  font-size: 10px;
+  width: 40px;
+  width: 30px;
+  display: block;
+  margin-left: auto;
+}
+
+.create-deal-cont-wrap-main-chat-wrap-msgP {
+  text-align: right;
+  margin-left: auto;
+  background: #ffffff;
+  width: 60%;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.create-deal-cont-wrap-main-chat-wrap-msgP p {
+  margin: 0;
+  padding: 0;
+}
+
+.create-deal-cont-wrap-main-chat-wrap-msgP-date {
+  text-align: left;
+}
+
+.create-deal-cont-wrap-main-chat-wrap-msgP-date span {
+  font-size: 10px;
+  width: 40px;
+  width: 30px;
+  display: block;
+  margin-right: auto;
+}
+
+.create-deal-cont-wrap-main-chat-entermsg input {
+  border: 1px solid #000000;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
 .create-deal .mydeal__banner {
   margin-top: 20px;
 }
@@ -3319,6 +3486,17 @@ select:focus {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .create-deal-cont-wrap-steps-mymsg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .create-deal-cont-wrap-steps-mymsg-item {
+    margin: 10px;
   }
   .create-deal-cont-wrap-steps-item {
     -ms-flex-preferred-size: 25%;
