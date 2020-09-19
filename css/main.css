@@ -3150,6 +3150,27 @@ select:focus {
   color: #edb021;
 }
 
+.create-deal-cont-wrap-main-myprofile .mainBtnB {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  margin-left: auto;
+  width: 100px;
+}
+
+.create-deal-cont-wrap-main-myprofile select {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.create-deal-cont-wrap-main-myprofile-input {
+  position: relative;
+}
+
 .create-deal-cont-wrap-main-myprofile-input label {
   display: block;
   font-size: 12px;
@@ -3161,6 +3182,14 @@ select:focus {
   padding: 5px;
   width: 100%;
   margin-bottom: 10px;
+}
+
+.create-deal-cont-wrap-main-myprofile-input .myprofile-input-rub {
+  position: absolute;
+  right: -20px;
+  top: 36%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .create-deal-cont-wrap-main-myprofile-input-wrap {
