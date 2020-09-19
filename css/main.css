@@ -3162,6 +3162,18 @@ select:focus {
   color: #edb021;
 }
 
+.create-deal-cont-wrap-main-myprofile.myprofile-uslugi h4 {
+  font-size: 16px;
+}
+
+.create-deal-cont-wrap-main-myprofile.myprofile-uslugi p {
+  font-size: 14px;
+}
+
+.create-deal-cont-wrap-main-myprofile.myprofile-uslugi img {
+  width: 100%;
+}
+
 .create-deal-cont-wrap-main-myprofile.orderuser input {
   border: 1px solid #000000;
   border-radius: 5px;
