@@ -94,10 +94,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    const listHeightCHeck = () => {
-        const mainList = document.querySelectorAll('.mainsearch-cont-resultTrade-title ul li'),
-                subList = document.querySelector('.slick-current');
-        if (window.innerWidth <= 992) {
+    const listHeightCHeck = (list, sub) => {
+        const mainList = document.querySelectorAll(list),
+                subList = document.querySelector(sub);
+        if (window.innerWidth <= 992 && mainList.length > 0 && subList) {
                 mainList.forEach((key, i) => {
                     subList.children[i].style.height = 'auto';
                     key.style.height = 'auto';
@@ -114,7 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     };
-    listHeightCHeck();
+    listHeightCHeck('.mainsearch-cont-resultTrade-title ul li','.slick-current');
+    listHeightCHeck('.curent-title ul li','.slick-current');
     slickInit();
 
     $('.slick-wrap').on('afterChange', function () {

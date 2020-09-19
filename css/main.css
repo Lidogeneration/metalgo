@@ -3487,8 +3487,18 @@ select:focus {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .create-deal-cont-wrap-steps-mymsg {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
   .create-deal-cont-wrap-steps-mymsg-item {
     margin: 10px;
+  }
+  .create-deal-cont-wrap-steps-mymsg-item h5 {
+    font-size: 14px;
+  }
+  .create-deal-cont-wrap-steps-mymsg-item p {
+    font-size: 12px;
   }
   .create-deal-cont-wrap-steps-item {
     -ms-flex-preferred-size: 25%;
@@ -3854,6 +3864,10 @@ select:focus {
   background: #ffffff;
 }
 
+.myprofileob__tabs-cont-control {
+  display: none;
+}
+
 .myprofileob__tabs-cont-title {
   border-bottom: 1px solid #edb021;
   padding: 0 10px 10px 10px;
@@ -3962,23 +3976,95 @@ select:focus {
   }
   .myprofileob__tabs-cont {
     border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0;
+  }
+  .myprofileob__tabs-cont-control {
     padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border: 1px solid #000000;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
   .myprofileob__tabs-cont-title {
-    padding: 15px 0;
+    margin: 0;
+    padding: 0;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    width: 50%;
+    border: none;
+  }
+  .myprofileob__tabs-cont-title ul {
+    padding: 0;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #969696;
   }
   .myprofileob__tabs-cont-title ul li {
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
     font-size: 10px;
+    color: #ffffff;
+    border-top: 1px solid #ffffff;
+  }
+  .myprofileob__tabs-cont-title ul li:last-child {
+    display: none;
+  }
+  .myprofileob__tabs-cont-text.prolonguser ul {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
   .myprofileob__tabs-cont-text {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    width: 50%;
     padding: 0;
   }
+  .myprofileob__tabs-cont-text ul {
+    padding: 0;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .myprofileob__tabs-cont-text ul li {
+    padding: 5px;
+    background: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
     font-size: 12px;
+    border-top: 1px solid #000000;
+  }
+  .myprofileob__tabs-cont-text ul li:last-child {
+    display: none;
+  }
+  .myprofileob__tabs .active-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .myprofileob__btn {
     margin-bottom: 20px;
@@ -4158,6 +4244,15 @@ select:focus {
 }
 
 .tarrifs-cont-tabs-list ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
   cursor: pointer;
   padding: 10px 20px;
@@ -4326,6 +4421,22 @@ select:focus {
   display: -ms-flexbox;
   display: flex;
   opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .tarrifs-cont-tabs-list {
+    padding: 5px;
+  }
+  .tarrifs-cont-tabs-list ul li {
+    padding: 5px;
+    font-size: 10px;
+  }
+  .tarrifs-cont-tabs-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .contacts {
@@ -4696,6 +4807,16 @@ select:focus {
 .help-cont-tabs .active-cont {
   opacity: 1;
   display: block;
+}
+
+@media (max-width: 992px) {
+  .help-cont-tabs-list {
+    padding: 5px;
+  }
+  .help-cont-tabs-list ul li {
+    padding: 5px;
+    font-size: 10px;
+  }
 }
 
 /* --- button start Start ------------------------------------------------*/

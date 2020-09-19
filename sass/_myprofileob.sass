@@ -59,6 +59,8 @@
       border-radius: 0px 5px 5px 5px
       display: none
       background: $main_white
+      &-control
+        display: none
       &-title
         border-bottom: 1px solid $main_rgb
         padding: 0 10px 10px 10px
@@ -128,19 +130,60 @@
             flex-basis: 50%
       &-cont
         border-top-right-radius: 0
-        padding: 5px
+        border-bottom-right-radius: 0
+        border-bottom-left-radius: 0
+        padding: 0
+        &-control
+          padding: 5px
+          display: flex
+          justify-content: space-around
+          border: 1px solid $main_color
+          border-bottom-right-radius: $br-radius
+          border-bottom-left-radius: $br-radius
         &-title
-          padding: 15px 0
+          margin: 0
+          padding: 0
+          flex-basis: 50%
+          width: 50%
+          border: none
           ul
+            padding: 0
+            margin: 0
+            flex-direction: column
+            background: $main_bgD
             li
+              padding: 5px
+              display: flex
+              justify-content: center
               flex-basis: 25%
               font-size: 10px
+              color: $main_white
+              border-top: 1px solid $main_white
+              &:last-child
+                display: none
+        &-text.prolonguser
+          ul
+            align-items: stretch
         &-text
+          flex-basis: 50%
+          width: 50%
           padding: 0
           ul
+            padding: 0
+            margin: 0
+            flex-direction: column
             li
+              padding: 5px
+              background: $main_white
+              display: flex
+              justify-content: center
               flex-basis: 25%
               font-size: 12px
+              border-top: 1px solid $main_color
+              &:last-child
+                display: none
+      .active-cont
+        display: flex
     &__btn
       margin-bottom: 20px
       .mainBtn

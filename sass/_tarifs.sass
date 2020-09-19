@@ -32,6 +32,9 @@
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
           border-radius: $br-radius
           li
+            display: flex
+            justify-content: center
+            align-items: center
             text-transform: uppercase
             cursor: pointer
             padding: 10px 20px
@@ -132,4 +135,14 @@
       .active-cont
         display: flex
         opacity: 1
-            
+  @media(max-width: 992px)
+    &-cont
+      &-tabs
+        &-list
+          padding: 5px
+          ul
+            li
+              padding: 5px
+              font-size: 10px
+        &-wrap
+          flex-direction: column
