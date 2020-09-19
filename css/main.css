@@ -3699,8 +3699,19 @@ select:focus {
   font-size: 14px;
 }
 
+.myprofileob__tabs-cont-text.prolonguser ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .myprofileob__tabs-cont-text {
   padding: 0 15px;
+}
+
+.myprofileob__tabs-cont-text .mainBtnB {
+  padding: 5px;
+  display: block;
 }
 
 .myprofileob__tabs-cont-text ul {
