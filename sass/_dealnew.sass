@@ -20,7 +20,7 @@
     &-wrap
       display: flex
       justify-content: space-around
-      min-height: 450px
+      min-height: 350px
       &-steps
         flex-basis: 25%
         display: flex
@@ -87,6 +87,61 @@
           top: 0
           left: 0
           margin-bottom: 20px
+          &-showMap
+            display: inline-block
+            margin: 10px 0
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            padding: 10px
+            margin-bottom: 5px
+            border-radius: $br-radius
+            border: 1px solid $main_color
+            background: $main_white
+            font-size: 12px
+            img
+              margin-right: 5px
+              height: 50%
+              width: auto
+          &-tarrif
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid $main_color
+            border-radius: $br-radius
+            margin-bottom: 10px
+            background: $main_white
+            h4
+              white-space: nowrap
+              margin: 0
+              padding: 0
+              font-size: 16px
+              background: $main_color
+              color: $main_rgb
+              padding: 10px
+            p
+              margin: 0 !important
+              padding: 0
+            span
+              white-space: nowrap
+              padding: 10px 20px
+              border-left: 1px solid $main_color
+          &-active
+            border: 2px solid $main_rgb
+          &-star
+            position: relative
+            &-sneed
+              position: absolute
+              left: -20px
+              top: 50%
+              transform: translateY(-50%)
+            &-morIn
+              position: absolute
+              right: -35px
+              top: 50%
+              transform: translateY(-50%)
+          select
+            width: 100%
+            padding: 5px
+            border-radius: $br-radius
           &-radio
             input, label
               cursor: pointer
@@ -105,8 +160,10 @@
             margin-bottom: 5px
             border-radius: $br-radius
             border: 1px solid $main_color
+            max-width: 100%
           &-inc
             input
+              max-width: 100%
               display: none
             label
               border-radius: $br-radius
@@ -188,16 +245,36 @@
         &-steps
           flex-direction: row
           flex-wrap: wrap
+          align-items: flex-start
           &-item
-            flex-basis: 50%
-            width: 50%
+            flex-basis: 25%
+            width: 25%
+            flex-direction: column
             &:after
               display: none
             &-text
+              text-align: center
+              margin-top: 5px
               font-size: 11px
+        &-main
+          &-it
+            &-tarrif
+              h4
+                white-space: nowrap
+                font-size: 12px
+                flex-grow: 1
+              p
+                text-align: center
+                flex-grow: 1
+              span
+                white-space: nowrap
+                flex-grow: 1
+                font-size: 12px
         &-main-it-total
           ul
             height: auto
             li
               flex-basis: 100%
               padding: 5px
+    .p-img-mobile
+      padding: 0 30px 0 18px
