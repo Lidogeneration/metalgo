@@ -63,8 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
     
     /// tabs myDeal
 
-    const tabsList = document.querySelectorAll('.mydeal__tabs-list ul li'),
-        tabsCont = document.querySelectorAll('.mydeal__tabs-cont');
+    const tabsList = document.querySelectorAll('.tabs-list ul li'),
+        tabsCont = document.querySelectorAll('.tabs-cont');
     if(tabsList.length != 0) {
         tabsList[0].classList.add('active-list');
         tabsCont[0].classList.add('active-cont');

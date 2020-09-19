@@ -3521,6 +3521,334 @@ select:focus {
   }
 }
 
+.myprofileob {
+  padding: 20px 0;
+}
+
+.myprofileob .global-cont {
+  background: #dcdcdc;
+  border-radius: 5px;
+  padding-bottom: 5px;
+}
+
+.myprofileob__title {
+  margin-bottom: 10px;
+}
+
+.myprofileob__title h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #edb021;
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-left: 16px solid #edb021;
+}
+
+.myprofileob__desc {
+  padding: 0 16px;
+  margin-bottom: 20px;
+}
+
+.myprofileob__desc p {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.myprofileob__tabs {
+  padding: 0 20px;
+  margin-bottom: 15px;
+}
+
+.myprofileob__tabs .active-cont {
+  display: block;
+}
+
+.myprofileob__tabs .active-list {
+  color: #ffffff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.myprofileob__tabs-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.myprofileob__tabs-list ul li {
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 10px;
+  background: #969696;
+  border: 1px solid #000000;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.myprofileob__tabs-list ul li:first-child {
+  border-top-left-radius: 5px;
+}
+
+.myprofileob__tabs-list ul li:last-child {
+  border-top-right-radius: 5px;
+}
+
+.myprofileob__tabs-cont {
+  padding: 15px 10px;
+  border: 1px solid #000000;
+  border-radius: 0px 5px 5px 5px;
+  display: none;
+  background: #ffffff;
+}
+
+.myprofileob__tabs-cont-title {
+  border-bottom: 1px solid #edb021;
+  padding: 0 10px 10px 10px;
+  margin-bottom: 10px;
+}
+
+.myprofileob__tabs-cont-title ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.myprofileob__tabs-cont-title ul li {
+  word-break: break-word;
+  text-align: center;
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+  color: #969696;
+  font-size: 14px;
+}
+
+.myprofileob__tabs-cont-text {
+  padding: 0 15px;
+}
+
+.myprofileob__tabs-cont-text ul {
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.myprofileob__tabs-cont-text ul li {
+  word-break: break-word;
+  text-align: center;
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+  font-size: 14px;
+}
+
+.myprofileob__tabs-cont-text ul:nth-child(odd) {
+  background: #dcdcdc;
+}
+
+.myprofileob__btn {
+  padding: 0 20px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.myprofileob__btn .mainBtnB {
+  text-transform: uppercase;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.myprofileob__banner img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .myprofileob {
+    padding: 20px 10px;
+  }
+  .myprofileob__title {
+    margin-bottom: 10px;
+  }
+  .myprofileob__title h3 {
+    font-size: 14px;
+  }
+  .myprofileob__desc {
+    margin-bottom: 15px;
+  }
+  .myprofileob__desc p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .myprofileob__tabs-list ul li {
+    text-align: center;
+    font-size: 16px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .myprofileob__tabs-cont {
+    border-top-right-radius: 0;
+    padding: 5px;
+  }
+  .myprofileob__tabs-cont-title {
+    padding: 15px 0;
+  }
+  .myprofileob__tabs-cont-title ul li {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    font-size: 10px;
+  }
+  .myprofileob__tabs-cont-text {
+    padding: 0;
+  }
+  .myprofileob__tabs-cont-text ul li {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    font-size: 12px;
+  }
+  .myprofileob__btn {
+    margin-bottom: 20px;
+  }
+  .myprofileob__btn .mainBtn {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 350px) {
+  .myprofileob__tabs-cont-text ul li {
+    font-size: 10px;
+  }
+}
+
+.new-banner {
+  margin-bottom: 20px;
+}
+
+.new-banner-cont {
+  background: #edb021;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+
+.new-banner-cont:after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 1px;
+  height: 80%;
+  background: #000000;
+}
+
+.new-banner-cont-item {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.new-banner-cont-item-icon {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 5px;
+}
+
+.new-banner-cont-item-text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 10px 5px;
+}
+
+.new-banner-cont-item-text p {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.new-banner-cont-item-img {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 5px;
+}
+
+.new-banner-cont-item-img img {
+  width: 150px;
+}
+
+@media (max-width: 992px) {
+  .new-banner-cont {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .new-banner-cont:after {
+    display: none;
+  }
+  .new-banner-cont-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .new-banner-cont-item-icon img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .new-banner-cont-item-img {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .new-banner-cont-item-img img {
+    width: 100%;
+  }
+}
+
+.oldBanner {
+  margin-bottom: 20px;
+}
+
+.oldBanner img {
+  width: 100%;
+}
+
 /* --- button start Start ------------------------------------------------*/
 .mainBtn {
   border: 1px solid #edb021;
