@@ -160,6 +160,7 @@ select:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .header__nav-cont-logo {
@@ -258,6 +259,7 @@ select:focus {
 }
 
 .header__nav-cont-user {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,8 +317,72 @@ select:focus {
   height: 15px;
 }
 
+.header__nav-cont .user-active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .header__nav-cont-userinfo {
   display: none;
+}
+
+.header__nav-cont .user-info-active {
+  display: block;
+  position: absolute;
+  bottom: -126px;
+  right: 0;
+  border: 1px solid #edb021;
+  background: #000000;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.header__nav-cont .user-info-active ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header__nav-cont .user-info-active ul li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav-cont .user-info-active ul li span {
+  margin-left: 5px;
+  background: #edb021;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.header__nav-cont .user-info-active ul li a {
+  color: #ffffff;
+}
+
+.header__nav-cont .user-info-active ul li:last-child {
+  padding-top: 10px;
+  border-top: 2px solid #edb021;
+  margin-bottom: 10px;
 }
 
 .header__nav-cont-close {
@@ -340,7 +406,8 @@ select:focus {
     margin: 0;
   }
   .header__nav-cont-list ul li a {
-    padding: 10px;
+    padding: 5px;
+    font-size: 12px;
   }
   .header__nav-cont-calc-wrap-img a img {
     width: 20px;
@@ -484,6 +551,10 @@ select:focus {
   }
   .header__nav-cont-userinfo {
     display: block;
+    position: relative;
+    border: none;
+    bottom: inherit;
+    right: inherit;
   }
   .header__nav-cont-userinfo ul {
     list-style: none;

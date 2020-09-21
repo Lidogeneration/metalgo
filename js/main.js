@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
     window.addEventListener('resize', () => {
-        listHeightCHeck();
+        userInfoBuild('.user-cont', '.user-list');
     });
 
     $(function () {
@@ -207,4 +207,34 @@ document.addEventListener('DOMContentLoaded', () => {
             
         });
     }
+
+
+    ////user info list
+    const userInfoBuild = (mainCont, listCon) => {
+        if(mainCont){
+            const mainContE = document.querySelector(mainCont),
+                listConE = document.querySelector(listCon);
+                listConE.style.width = mainContE.offsetWidth + 'px';
+        }
+
+    };
+    userInfoBuild('.user-cont', '.user-list');
+
+
+    const mainContE = document.querySelector('.user-cont'),
+    listConE = document.querySelector('.user-list');
+
+    const hideUserInfo = () => {
+            mainContE.classList.toggle('user-active');
+            listConE.classList.toggle('user-info-active');
+    };
+
+    if(mainContE && window.innerWidth > 992){
+        document.addEventListener('click', e => {
+            if(mainContE.contains(e.target) || listConE.contains(e.target)) {
+                hideUserInfo();
+            }
+        });
+    }
+    
 });
