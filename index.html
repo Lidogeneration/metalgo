@@ -115,7 +115,7 @@
 			<!-- /.header__nav-cont-user -->
 			<div class="header__nav-cont-userinfo user-list">
 				<ul>
-					<li><a href="#">Мой профиль</a></li>
+					<li><a href="#authWindow" class="mpopup">Мой профиль</a></li>
 					<li><a href="#">Мои объявления</a></li>
 					<li><a href="#">Продлить подписку</a></li>
 					<li><a href="#">Сообщения</a><span>1</span></li>
@@ -259,6 +259,57 @@
 	<!-- /.mpopup-window-main -->
 </div>
 <!-- /.mpopup-window -->
+
+<div class="auth-window mfp-hide white-popup-block" id="authWindow">
+	<div class="mpopup-window-header">
+		<p>Авторизация</p>
+		<span class="mpopup-window-header-close popup-close"></span>
+	</div>	
+	<div class="auth-window-cont">
+		<div class="auth-window-cont-sign">
+			<a href="#">Зарегистрироваться</a>
+		</div>
+		<!-- /.auth-window-cont-sing -->
+		<div class="auth-window-cont-input">
+			<select name="role">
+				<option value="Выберите роль" selected disabled>Выберите роль</option>
+				<option value="01">01</option>
+				<option value="01">01</option>
+				<option value="01">01</option>
+			</select>
+			<input type="email" placeholder="email" name="email">
+			<input type="text" placeholder="Пароль" name="pass">
+			<button class="mainBtn">ВОЙТИ</button>
+		</div>
+		<!-- /.auth-window-cont-input -->
+		<div class="auth-window-cont-check">
+			<div class="auth-window-cont-check-wrap">
+				<input type="checkbox" name="remember"  id="remember"><label for="remember">Запомнить меня</label>
+			</div>
+			<!-- /.auth-window-cont-check-wrap -->
+
+			<a href="#">Восстановить пароль</a>
+		</div>
+		<!-- /.auth-window-cont-check -->
+	</div>
+	<!-- /.auth-window-cont -->
+</div>
+
+
+<div class="auth-window mfp-hide white-popup-block" id="lostPass">
+	<div class="mpopup-window-header">
+		<p>Восстановление пароля</p>
+		<span class="mpopup-window-header-close popup-close"></span>
+	</div>	
+	<div class="auth-window-cont">
+		<div class="auth-window-cont-input mb-0">
+			<input type="email" placeholder="Введите свой email" name="email">
+			<button class="mainBtn">ОТПРАВИТЬ ПАРОЛЬ</button>
+		</div>
+		<!-- /.auth-window-cont-input -->
+	</div>
+	<!-- /.auth-window-cont -->
+</div>
 
 <section class="offer">
 	<div class="offer__cont global-cont">

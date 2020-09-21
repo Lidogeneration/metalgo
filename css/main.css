@@ -5252,5 +5252,107 @@ select:focus {
   height: auto;
 }
 
+.auth-window {
+  margin: 0 auto;
+  width: 468px;
+  background: #969696;
+  border-radius: 5px;
+}
+
+.auth-window .mpopup-window-header {
+  background: rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px 5px 0px 0px;
+  text-align: center;
+}
+
+.auth-window .mpopup-window-header p {
+  color: #edb021;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.auth-window-cont {
+  padding: 0 20px 20px 20px;
+}
+
+.auth-window-cont-sign {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.auth-window-cont-sign a {
+  display: inline-block;
+  color: #edb021;
+}
+
+.auth-window-cont-input {
+  margin-bottom: 20px;
+}
+
+.auth-window-cont-input select, .auth-window-cont-input input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  padding: 5px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.auth-window-cont-input .mainBtn {
+  width: 100%;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #edb021;
+  color: #ffffff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.auth-window-cont-input .mainBtn:hover {
+  color: #000000;
+}
+
+.auth-window-cont-input ::-webkit-input-placeholder {
+  color: #dcdcdc;
+}
+
+.auth-window-cont-input :-ms-input-placeholder {
+  color: #dcdcdc;
+}
+
+.auth-window-cont-input ::-ms-input-placeholder {
+  color: #dcdcdc;
+}
+
+.auth-window-cont-input ::placeholder {
+  color: #dcdcdc;
+}
+
+.auth-window-cont-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.auth-window-cont-check-wrap input {
+  margin-right: 5px;
+}
+
+.auth-window-cont-check-wrap label {
+  color: #ffffff;
+}
+
+.auth-window-cont-check a {
+  color: #ffffff;
+}
+
 /* --- forms end ------------------------------------------------*/
 /*# sourceMappingURL=main.css.map */
