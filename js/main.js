@@ -225,8 +225,8 @@ document.addEventListener('DOMContentLoaded', () => {
     listConE = document.querySelector('.user-list');
 
     const hideUserInfo = () => {
-            mainContE.classList.toggle('user-active');
-            listConE.classList.toggle('user-info-active');
+        mainContE.classList.toggle('user-active');
+        listConE.classList.toggle('user-info-active');
     };
 
     if(mainContE && window.innerWidth > 992){
