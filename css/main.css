@@ -410,6 +410,7 @@ select:focus {
 }
 
 .header__nav-cont .user-info-active ul li span {
+  border-radius: 100%;
   margin-left: 5px;
   background: #edb021;
   width: 20px;
@@ -503,13 +504,14 @@ select:focus {
     cursor: pointer;
   }
   .header__nav-mobile-btn-wrap span {
+    border-radius: 5px;
     display: block;
-    width: 60px;
+    width: 35px;
     height: 3px;
     background: #edb021;
   }
   .header__nav-mobile-btn-wrap span:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
   .header__nav-title h3 {
     font-size: 14px;
@@ -626,6 +628,7 @@ select:focus {
             align-items: center;
   }
   .header__nav-cont-userinfo ul li span {
+    border-radius: 100%;
     background: #edb021;
     width: 20px;
     height: 20px;
@@ -3085,7 +3088,7 @@ select:focus {
   opacity: 1;
   -webkit-transition: .3s;
   transition: .3s;
-  z-index: 999;
+  z-index: 99;
 }
 
 .create-deal-cont-wrap-main-it {
@@ -3182,6 +3185,14 @@ select:focus {
   width: 100%;
   padding: 5px;
   border-radius: 5px;
+  word-break: break-all;
+  word-wrap: inherit;
+}
+
+.create-deal-cont-wrap-main-it select option {
+  max-width: 100%;
+  word-break: break-all;
+  word-wrap: inherit;
 }
 
 .create-deal-cont-wrap-main-it-radio input, .create-deal-cont-wrap-main-it-radio label {
@@ -3307,7 +3318,7 @@ select:focus {
 }
 
 .create-deal-cont-wrap-main-btn {
-  z-index: 9999999999999;
+  z-index: 99;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3415,7 +3426,7 @@ select:focus {
 
 .create-deal-cont-wrap-main-myprofile-input-wrap .myprofile-editIn {
   cursor: pointer;
-  z-index: 999;
+  z-index: 99;
   position: absolute;
   left: 5px;
   top: 38%;
@@ -3430,7 +3441,7 @@ select:focus {
 
 .create-deal-cont-wrap-main-myprofile-input-wrap .myprofile-morIn {
   cursor: pointer;
-  z-index: 999;
+  z-index: 99;
   position: absolute;
   right: -30px;
   top: 38%;
