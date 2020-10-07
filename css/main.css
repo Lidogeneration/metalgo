@@ -179,6 +179,37 @@ select:focus {
   color: #edb021;
 }
 
+.mfp-bottom-bar {
+  display: none;
+}
+
+img.mfp-img {
+  min-width: 500px;
+}
+
+@media(max-width: 505px) {
+  img.mfp-img {
+    min-width: 300px;
+  }
+}
+
+
+@media(max-width: 305px) {
+  img.mfp-img {
+    min-width: 200px;
+  }
+}
+
+.searchs__title-cont-subtitle h4 {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.searchs__title .cont01, .searchs__title .cont02, .searchs__title .cont03  {
+  min-height: 180px;
+}
+
 .header {
   background: #000;
   position: fixed;
@@ -797,7 +828,7 @@ select:focus {
 }
 
 .mainsearch-cont {
-  padding: 24px 0;
+  padding: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2348,7 +2379,8 @@ select:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 28px;
+  margin-top: 20px;
 }
 
 .searchs__title-cont {
@@ -2381,12 +2413,6 @@ select:focus {
   margin-right: auto;
   max-width: 100%;
   height: auto;
-}
-
-.searchs__title-cont-subtitle h4 {
-  text-align: center;
-  font-size: 14px;
-  text-transform: uppercase;
 }
 
 .searchs__title-cont-desc p {
@@ -2429,11 +2455,26 @@ select:focus {
 }
 
 .searchs__offer {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+.searchs__offer-msg {
+  margin-top: 25px;
+}
+
+.searchs__pay-title {
+  margin-top: 25px;
+}
+
+.searchs__pay-btn {
+  margin-bottom: 30px;
 }
 
 .searchs__offer-title {
   margin-bottom: 10px;
+}
+
+.mydeal__banner {
+  margin: 10px 0;
 }
 
 .searchs__offer-title h3 {
@@ -4030,6 +4071,7 @@ select:focus {
       flex-basis: 10%;
   color: #969696;
   font-size: 14px;
+  /*height: 100% !important;*/
 }
 
 .myprofileob__tabs-cont-text.prolonguser ul {
@@ -4045,6 +4087,24 @@ select:focus {
 .myprofileob__tabs-cont-text .mainBtnB {
   padding: 5px;
   display: block;
+}
+
+@media (max-width: 1105px) {
+  .myprofileob__tabs-cont-text .mainBtnB {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 652px) {
+  .myprofileob__tabs-cont-title ul .bid {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 406px) {
+  .myprofileob__tabs-cont-title ul .bid {
+    padding: 18px;
+  }
 }
 
 .myprofileob__tabs-cont-text ul {
@@ -4067,6 +4127,18 @@ select:focus {
   font-size: 14px;
 }
 
+@media (max-width: 1416px) {
+  .myprofileob__tabs-cont-title ul li {
+    -ms-flex-preferred-size: 12%;
+    flex-basis: 12%;
+  }
+
+  .myprofileob__tabs-cont-text ul li {
+    -ms-flex-preferred-size: 12%;
+    flex-basis: 12%;
+  }
+}
+
 .myprofileob__tabs-cont-text ul:nth-child(odd) {
   background: #dcdcdc;
 }
@@ -4086,6 +4158,24 @@ select:focus {
 .myprofileob__banner img {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 1289px) {
+  .myprofileob__tabs-cont-text ul li a img {
+    width: 15px;
+  }
+}
+
+@media (max-width: 1142px) {
+  .myprofileob__tabs-cont-text ul li a img {
+    width: 13px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .myprofileob__tabs-cont-text ul li a img {
+    width: 12px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -4146,7 +4236,7 @@ select:focus {
     background: #969696;
   }
   .myprofileob__tabs-cont-title ul li {
-    padding: 5px;
+    padding: 6px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4193,7 +4283,7 @@ select:focus {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
     font-size: 12px;
-    border-top: 1px solid #000000;
+    border-top: 1px solid #969696;
   }
   .myprofileob__tabs-cont-text ul li:last-child {
     display: none;
@@ -4212,8 +4302,9 @@ select:focus {
 }
 
 @media (max-width: 350px) {
-  .myprofileob__tabs-cont-text ul li {
+  .myprofileob__tabs-cont-title ul li  {
     font-size: 10px;
+    padding: 6px;
   }
 }
 
@@ -5714,6 +5805,7 @@ select:focus {
   width: 468px;
   background: #969696;
   border-radius: 5px;
+  border: 1px solid #000;
 }
 
 .auth-window .mpopup-window-header {
@@ -5736,7 +5828,8 @@ select:focus {
 
 .auth-window-cont-sign {
   text-align: right;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .auth-window-cont-sign a {
@@ -5759,6 +5852,7 @@ select:focus {
 }
 
 .auth-window-cont-input .mainBtn {
+  border: 1px solid #000;
   width: 100%;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -5766,6 +5860,7 @@ select:focus {
   color: #ffffff;
   -webkit-transition: .3s;
   transition: .3s;
+  margin-top: 20px;
 }
 
 .auth-window-cont-input .mainBtn:hover {
@@ -5805,6 +5900,7 @@ select:focus {
 
 .auth-window-cont-check-wrap label {
   color: #ffffff;
+  margin-bottom: 0;
 }
 
 .auth-window-cont-check a {
