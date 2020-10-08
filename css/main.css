@@ -411,7 +411,7 @@ img.mfp-img {
 .header__nav-cont .user-info-active {
   display: block;
   position: absolute;
-  bottom: -126px;
+  bottom: -175px;
   right: 0;
   border: 1px solid #edb021;
   background: #000000;
@@ -460,6 +460,7 @@ img.mfp-img {
 
 .header__nav-cont .user-info-active ul li a {
   color: #ffffff;
+  padding: 5px 0;
 }
 
 .header__nav-cont .user-info-active ul li:last-child {
@@ -786,6 +787,7 @@ img.mfp-img {
 @media (max-width: 992px) {
   .offer {
     background: #969696;
+    padding: 10px 0 5px 0;
   }
   .offer__cont {
     padding: 0 20px;
@@ -1636,6 +1638,9 @@ img.mfp-img {
 }
 
 @media (max-width: 992px) {
+  .mainsearch-mobile p {
+    margin-top: 4px;
+  }
   .mainsearch .slick-list {
     height: 100% !important;
   }
@@ -5093,6 +5098,10 @@ img.mfp-img {
 }
 
 @media (max-width: 992px) {
+  .offer__cont-input input {
+    padding: 8px;
+  }
+
   .offer.mainpage {
     padding: 20px 0 0 0;
     background: #dcdcdc;
