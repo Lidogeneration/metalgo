@@ -87,42 +87,50 @@
           </div>
           <!-- /.header__nav-cont-calc-wrap -->
         </div>
+
+		  <div class="come">
+			  <a href="#authWindow" class="come-in mpopup">
+				  <img class="user-img" src="img/user.svg" alt="User">
+				  <p class="come-p">Войти</p>
+			  </a>
+		  </div>
+
         <!-- /.header__nav-cont-calc -->
-        <div class="header__nav-cont-user user-cont">
-          <div class="header__nav-cont-user-icon">
-            <img src="img/user.svg" alt="User">
-          </div>
-          <!-- /.header__nav-cont-user-icon -->
-          <div class="header__nav-cont-user-desc">
-            <div class="header__nav-cont-user-desc-title">
-              <p>Поставщик<br><span>ООО "Северсталь"</span></p>
-            </div>
-            <!-- /.header__nav-cont-user-desc-title -->
-            <div class="header__nav-cont-user-desc-start">
-              <img src="img/Star.svg" alt="star">
-              <img src="img/Star.svg" alt="star">
-              <img src="img/Star.svg" alt="star">
-              <img src="img/Star.svg" alt="star">
-              <img src="img/Star.svg" alt="star">
-            </div>
-            <!-- /.header__nav-cont-user-desc-start -->
-          </div>
-          <!-- /.header__nav-cont-user-desc -->
-          <div class="header__nav-cont-user-arrow">
-            <a href="#"><img src="img/userArrow.svg" alt=""></a>
-          </div>
-          <!-- /.header__nav-cont-user-arrow -->
-        </div>
+        <!--<div class="header__nav-cont-user user-cont">-->
+          <!--<div class="header__nav-cont-user-icon">-->
+            <!--<img src="img/user.svg" alt="User">-->
+          <!--</div>-->
+          <!--&lt;!&ndash; /.header__nav-cont-user-icon &ndash;&gt;-->
+          <!--<div class="header__nav-cont-user-desc">-->
+            <!--<div class="header__nav-cont-user-desc-title">-->
+              <!--<p>Поставщик<br><span>ООО "Северсталь"</span></p>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /.header__nav-cont-user-desc-title &ndash;&gt;-->
+            <!--<div class="header__nav-cont-user-desc-start">-->
+              <!--<img src="img/Star.svg" alt="star">-->
+              <!--<img src="img/Star.svg" alt="star">-->
+              <!--<img src="img/Star.svg" alt="star">-->
+              <!--<img src="img/Star.svg" alt="star">-->
+              <!--<img src="img/Star.svg" alt="star">-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /.header__nav-cont-user-desc-start &ndash;&gt;-->
+          <!--</div>-->
+          <!--&lt;!&ndash; /.header__nav-cont-user-desc &ndash;&gt;-->
+          <!--<div class="header__nav-cont-user-arrow">-->
+            <!--<a href="#"><img src="img/userArrow.svg" alt=""></a>-->
+          <!--</div>-->
+          <!--&lt;!&ndash; /.header__nav-cont-user-arrow &ndash;&gt;-->
+        <!--</div>-->
         <!-- /.header__nav-cont-user -->
-        <div class="header__nav-cont-userinfo user-list">
-          <ul>
-            <li><a href="#authWindow" class="mpopup">Мой профиль</a></li>
-            <li><a href="#">Мои объявления</a></li>
-            <li><a href="#">Продлить подписку</a></li>
-            <li><a href="#">Сообщения</a><span>1</span></li>
-            <li><a href="#">Выход</a></li>
-          </ul>
-        </div>
+        <!--<div class="header__nav-cont-userinfo user-list">-->
+          <!--<ul>-->
+            <!--<li><a href="#authWindow" class="mpopup">Мой профиль</a></li>-->
+            <!--<li><a href="#">Мои объявления</a></li>-->
+            <!--<li><a href="#">Продлить подписку</a></li>-->
+            <!--<li><a href="#">Сообщения</a><span>1</span></li>-->
+            <!--<li><a href="#">Выход</a></li>-->
+          <!--</ul>-->
+        <!--</div>-->
         <!-- /.header__nav-cont-userinfo -->
         <div class="header__nav-cont-close" id="btnClose">
           <span></span>
@@ -133,6 +141,57 @@
       <!-- /.header__nav-cont -->
     </nav>
   </header>
+
+  <div class="auth-window mfp-hide white-popup-block" id="authWindow">
+	  <div class="mpopup-window-header">
+		  <p>Авторизация</p>
+		  <span class="mpopup-window-header-close popup-close"></span>
+	  </div>
+	  <div class="auth-window-cont">
+		  <div class="auth-window-cont-sign">
+			  <a href="#">Зарегистрироваться</a>
+		  </div>
+		  <!-- /.auth-window-cont-sing -->
+		  <div class="auth-window-cont-input">
+			  <select name="role">
+				  <option value="Выберите роль" selected disabled>Выберите роль</option>
+				  <option value="01">01</option>
+				  <option value="01">01</option>
+				  <option value="01">01</option>
+			  </select>
+			  <input type="email" placeholder="email" name="email">
+			  <input type="text" placeholder="Пароль" name="pass">
+			  <button class="mainBtn">ВОЙТИ</button>
+		  </div>
+		  <!-- /.auth-window-cont-input -->
+		  <div class="auth-window-cont-check">
+			  <div class="auth-window-cont-check-wrap">
+				  <input type="checkbox" name="remember"  id="remember"><label for="remember">Запомнить меня</label>
+			  </div>
+			  <!-- /.auth-window-cont-check-wrap -->
+
+			  <a href="#lostPass" class="mpopup">Восстановить пароль</a>
+		  </div>
+		  <!-- /.auth-window-cont-check -->
+	  </div>
+	  <!-- /.auth-window-cont -->
+  </div>
+
+  <div class="auth-window mfp-hide white-popup-block" id="lostPass">
+	  <div class="mpopup-window-header">
+		  <p>Восстановление пароля</p>
+		  <span class="mpopup-window-header-close popup-close"></span>
+	  </div>
+	  <div class="auth-window-cont">
+		  <div class="auth-window-cont-input mb-0">
+			  <input type="email" placeholder="Введите свой email" name="email">
+			  <button class="mainBtn">ОТПРАВИТЬ ПАРОЛЬ</button>
+		  </div>
+		  <!-- /.auth-window-cont-input -->
+	  </div>
+	  <!-- /.auth-window-cont -->
+  </div>
+
   <section class="offer mainpage">
     <div class="offer__cont global-cont">
       <div class="offer__cont-select">

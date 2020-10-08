@@ -3389,7 +3389,7 @@ select:focus {
 
 .auth-window {
   margin: 0 auto;
-  width: 468px;
+  max-width: 468px;
   background: #969696;
   border-radius: 5px;
   border: 1px solid #000; }
