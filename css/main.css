@@ -200,6 +200,38 @@ img.mfp-img {
   }
 }
 
+.come-in {
+  border: 1px solid #EDB021;
+  padding: 8px 19px;
+  display: block;
+  margin-top: 7px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .come {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+.user-img {
+  width: 30px;
+  margin-right: 15px;
+}
+
+.come-p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #EDB021;
+  display: contents;
+}
+
 .searchs__title-cont-subtitle h4 {
   text-align: center;
   font-size: 18px;
@@ -243,6 +275,7 @@ img.mfp-img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  height: 61px;
 }
 
 .header__nav-cont-logo {
@@ -411,7 +444,7 @@ img.mfp-img {
 .header__nav-cont .user-info-active {
   display: block;
   position: absolute;
-  bottom: -126px;
+  bottom: -175px;
   right: 0;
   border: 1px solid #edb021;
   background: #000000;
@@ -460,6 +493,7 @@ img.mfp-img {
 
 .header__nav-cont .user-info-active ul li a {
   color: #ffffff;
+  padding: 5px 0;
 }
 
 .header__nav-cont .user-info-active ul li:last-child {
@@ -786,6 +820,7 @@ img.mfp-img {
 @media (max-width: 992px) {
   .offer {
     background: #969696;
+    padding: 10px 0 5px 0;
   }
   .offer__cont {
     padding: 0 20px;
@@ -1636,6 +1671,9 @@ img.mfp-img {
 }
 
 @media (max-width: 992px) {
+  .mainsearch-mobile p {
+    margin-top: 4px;
+  }
   .mainsearch .slick-list {
     height: 100% !important;
   }
@@ -5093,6 +5131,10 @@ img.mfp-img {
 }
 
 @media (max-width: 992px) {
+  .offer__cont-input input {
+    padding: 8px;
+  }
+
   .offer.mainpage {
     padding: 20px 0 0 0;
     background: #dcdcdc;
@@ -5802,7 +5844,7 @@ img.mfp-img {
 
 .auth-window {
   margin: 0 auto;
-  width: 468px;
+  max-width: 468px;
   background: #969696;
   border-radius: 5px;
   border: 1px solid #000;
@@ -5892,6 +5934,19 @@ img.mfp-img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 992px) {
+  .auth-window-cont-check-wrap {
+    display: flex;
+    align-items: center;
+  }
+  .auth-window-cont-check-wrap label {
+    font-size: 12px;
+  }
+  .auth-window-cont-check a {
+    font-size: 12px;
+  }
 }
 
 .auth-window-cont-check-wrap input {

@@ -234,7 +234,7 @@ select:focus {
     .header__nav-cont .user-info-active {
       display: block;
       position: absolute;
-      bottom: -126px;
+      bottom: -173px;
       right: 0;
       border: 1px solid #edb021;
       background: #000000;
@@ -262,7 +262,8 @@ select:focus {
             align-items: center;
             border: 2px solid rgba(255, 255, 255, 0.7); }
           .header__nav-cont .user-info-active ul li a {
-            color: #ffffff; }
+            color: #ffffff;
+            padding: 5px 0; }
           .header__nav-cont .user-info-active ul li:last-child {
             padding-top: 10px;
             border-top: 2px solid #edb021;
@@ -3388,7 +3389,7 @@ select:focus {
 
 .auth-window {
   margin: 0 auto;
-  width: 468px;
+  max-width: 468px;
   background: #969696;
   border-radius: 5px;
   border: 1px solid #000; }
