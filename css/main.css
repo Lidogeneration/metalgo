@@ -3489,6 +3489,11 @@ img.mfp-img {
   padding: 5px;
   width: 100%;
   margin-bottom: 10px;
+  background-color: white;
+}
+
+.create-deal-cont-wrap-main-myprofile-input-file {
+  color: rgb(117, 117, 117);
 }
 
 .create-deal-cont-wrap-main-myprofile-input .myprofile-input-rub {
