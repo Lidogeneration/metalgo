@@ -242,6 +242,7 @@ img.mfp-img {
   min-height: 180px;
 }
 
+
 .header {
   background: #000;
   position: fixed;
@@ -4898,6 +4899,18 @@ img.mfp-img {
   }
 }
 
+.cont-inst {
+  max-width: 26px
+}
+
+.cont-vk {
+  max-width: 27px
+}
+
+.cont-yt {
+  max-width: 33px
+}
+
 .help {
   padding: 20px 0;
 }
@@ -5135,6 +5148,22 @@ img.mfp-img {
   border-radius: 0 5px 5px 0;
 }
 
+.lupa {
+  max-width: 24px
+}
+
+.visa {
+  max-width: 21px
+}
+
+.mastercard {
+  max-width: 24px
+}
+
+.tinkoff {
+  max-width: 65px
+}
+
 @media (max-width: 992px) {
   .offer__cont-input input {
     padding: 8px;
@@ -5204,7 +5233,7 @@ img.mfp-img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("../img/mainfs.svg");
+  background: url("../img/mainfs.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5395,10 +5424,22 @@ img.mfp-img {
 }
 
 .how-cont-item-icon img {
-  max-width: 100%;
+  /*max-width: 100%;*/
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.how01 {
+  max-width: 139px
+}
+
+.how02 {
+  max-width: 187px
+}
+
+.how03 {
+  max-width: 216px
 }
 
 .how-cont-item-title {
