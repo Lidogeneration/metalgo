@@ -2972,6 +2972,31 @@ select:focus {
 .how03 {
   max-width: 216px; }
 
+.come-in {
+  border: 1px solid #EDB021;
+  padding: 8px 19px;
+  margin-top: 7px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; }
+
+.come {
+  display: flex;
+  margin: 0 auto; }
+
+.user-img {
+  width: 30px;
+  margin-right: 15px; }
+
+.come-p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #EDB021;
+  display: contents; }
+
 .offer.mainpage {
   padding: 20px 0;
   margin-bottom: 0; }
