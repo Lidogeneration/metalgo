@@ -2819,6 +2819,13 @@ select:focus {
       flex-direction: column; }
       .contacts-cont-wrap:after {
         display: none; } }
+  .contacts .cont-inst {
+    max-width: 26px; }
+  .contacts .cont-vk {
+    max-width: 27px; }
+  .contacts .cont-yt {
+    max-width: 33px; }
+
 .help {
   padding: 20px 0; }
   .help-cont {
@@ -2944,6 +2951,52 @@ select:focus {
     .help-cont-tabs-list ul li {
       padding: 5px;
       font-size: 10px; } }
+.lupa {
+  max-width: 24px; }
+
+.visa {
+  max-width: 21px; }
+
+.mastercard {
+  max-width: 24px; }
+
+.tinkoff {
+  max-width: 65px; }
+
+.how01 {
+  max-width: 139px; }
+
+.how02 {
+  max-width: 187px; }
+
+.how03 {
+  max-width: 216px; }
+
+.come-in {
+  border: 1px solid #EDB021;
+  padding: 8px 19px;
+  margin-top: 7px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; }
+
+.come {
+  display: flex;
+  margin: 0 auto; }
+
+.user-img {
+  width: 30px;
+  margin-right: 15px; }
+
+.come-p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #EDB021;
+  display: contents; }
+
 .offer.mainpage {
   padding: 20px 0;
   margin-bottom: 0; }
@@ -3008,7 +3061,7 @@ select:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../img/mainfs.svg");
+  background: url("../img/mainfs.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3114,7 +3167,6 @@ select:focus {
       background: #ffffff;
       padding: 30px; }
       .how-cont-item-icon img {
-        max-width: 100%;
         display: block;
         margin-left: auto;
         margin-right: auto; }
@@ -3389,7 +3441,6 @@ select:focus {
 
 .auth-window {
   margin: 0 auto;
-  max-width: 468px;
   background: #969696;
   border-radius: 5px;
   border: 1px solid #000; }
