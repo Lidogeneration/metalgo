@@ -429,7 +429,7 @@ img.mfp-img {
 
 .header__nav-cont-user-arrow img {
   width: 15px;
-  height: 15px;
+  height: 10px;
 }
 
 .header__nav-cont .user-active {
@@ -763,6 +763,7 @@ img.mfp-img {
 .offer__cont-title h3 {
   text-transform: uppercase;
   font-size: 14px;
+  margin-top: 14px;
 }
 
 .offer__cont-input {
@@ -2399,6 +2400,7 @@ img.mfp-img {
 
 .searchs__dealmore {
   margin-bottom: 20px;
+  margin-top: 14px;
 }
 
 .searchs__dealmore-btn .mainBtn {
@@ -2969,7 +2971,7 @@ img.mfp-img {
 }
 
 .create-deal {
-  padding: 20px 0;
+  /*padding: 20px 0;*/
 }
 
 .create-deal-cont {
@@ -2985,6 +2987,7 @@ img.mfp-img {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   margin-bottom: 20px;
+  margin-top: 20px
 }
 
 .create-deal-cont-head p {
@@ -3014,8 +3017,8 @@ img.mfp-img {
 }
 
 .create-deal-cont-wrap-steps {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3023,9 +3026,9 @@ img.mfp-img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /*-webkit-box-align: center;*/
+      /*-ms-flex-align: center;*/
+          /*align-items: center;*/
 }
 
 .create-deal-cont-wrap-steps-mymsg-item {
@@ -3147,8 +3150,8 @@ img.mfp-img {
 }
 
 .create-deal-cont-wrap-main {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 63%;
+      flex-basis: 63%;
   position: relative;
 }
 
@@ -4182,6 +4185,18 @@ img.mfp-img {
   }
 }
 
+@media (max-width: 1220px) {
+  .myprofileob__tabs-cont-title ul li {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1063px) {
+  .myprofileob__tabs-cont-title ul li {
+    font-size: 11px;
+  }
+}
+
 .myprofileob__tabs-cont-text ul:nth-child(odd) {
   background: #dcdcdc;
 }
@@ -4353,6 +4368,7 @@ img.mfp-img {
 
 .new-banner {
   margin-bottom: 20px;
+  margin-bottom: -5px;
 }
 
 .new-banner-cont {
@@ -5103,7 +5119,7 @@ img.mfp-img {
 }
 
 .offer.mainpage {
-  padding: 20px 0;
+  padding: 30px 0 20px 0;
   margin-bottom: 0;
 }
 
@@ -6857,3 +6873,5 @@ img.mfp-img {
   z-index: 9999;
 }
 /*# sourceMappingURL=main.css.map */
+
+.hover_color option:hover { background-color: red; border:1px solid red }
