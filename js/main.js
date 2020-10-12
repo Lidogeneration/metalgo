@@ -261,3 +261,23 @@ $(document).ready(function() {
     });
 
 });
+
+
+
+$('.slick-list').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    arrows: false,
+    dots: false,
+    autoplay: false,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                // slidesToShow: 2,
+                // arrows: true,
+            }
+        },
+    ]
+});

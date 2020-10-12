@@ -805,6 +805,9 @@ select:focus {
       flex-basis: 15%; }
       .mainsearch-cont-banner-wrap {
         margin-bottom: 20px; }
+@media(max-width: 992px) {
+  .mainsearch-cont-banner-wrap {
+    display: none; } }
         .mainsearch-cont-banner-wrap img {
           max-width: 100%;
           height: auto; }
@@ -2098,8 +2101,7 @@ select:focus {
             padding: 0; }
           .create-deal-cont-wrap-main-chat-wrap-msguser span {
             font-size: 10px;
-            width: 40px;
-            width: 30px;
+            width: 52px;
             display: block;
             margin-left: auto; }
         .create-deal-cont-wrap-main-chat-wrap-msgP {
@@ -2575,6 +2577,11 @@ select:focus {
   .oldBanner img {
     width: 100%; }
 
+.banner-image {
+  max-width: 150px; }
+@media(max-width: 992px) {
+  .banner-image {
+    max-width: 100%; } }
 .tarrifs {
   padding: 20px 0; }
   .tarrifs-cont {
