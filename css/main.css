@@ -3207,12 +3207,13 @@ img.mfp-img {
   border: 1px solid #000000;
   background: #ffffff;
   font-size: 12px;
+  cursor: pointer;
 }
 
 .create-deal-cont-wrap-main-it-showMap img {
   margin-right: 5px;
-  height: 50%;
-  width: auto;
+  /*height: 50%;*/
+  /*width: auto;*/
 }
 
 .create-deal-cont-wrap-main-it-tarrif {
@@ -6898,4 +6899,3 @@ img.mfp-img {
 }
 /*# sourceMappingURL=main.css.map */
 
-.hover_color option:hover { background-color: red; border:1px solid red }

@@ -1826,11 +1826,10 @@ select:focus {
           border-radius: 5px;
           border: 1px solid #000000;
           background: #ffffff;
-          font-size: 12px; }
+          font-size: 12px;
+          cursor: pointer; }
           .create-deal-cont-wrap-main-it-showMap img {
-            margin-right: 5px;
-            height: 50%;
-            width: auto; }
+            margin-right: 5px; }
         .create-deal-cont-wrap-main-it-tarrif {
           display: flex;
           justify-content: space-between;
