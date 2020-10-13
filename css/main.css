@@ -764,6 +764,7 @@ img.mfp-img {
   text-transform: uppercase;
   font-size: 14px;
   margin-top: 14px;
+  margin-bottom: 14px;
 }
 
 .offer__cont-input {
@@ -3261,10 +3262,20 @@ img.mfp-img {
 
 .create-deal-cont-wrap-main-it-star-sneed {
   position: absolute;
-  left: -20px;
-  top: 50%;
+  width: 8px;
+  left: -15px;
+  top: 45%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.create-deal-cont-wrap-main-it-star-sneed-p {
+  position: absolute;
+  width: 8px;
+  left: -15px;
+  bottom: 8px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .create-deal-cont-wrap-main-it-star-morIn {
@@ -3749,7 +3760,7 @@ img.mfp-img {
     font-size: 11px;
   }
   .create-deal-cont-wrap-main-myprofile {
-    padding-right: 30px;
+    padding: 0 15px;
   }
   .create-deal-cont-wrap-main-it-tarrif h4 {
     white-space: nowrap;

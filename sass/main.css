@@ -432,7 +432,8 @@ select:focus {
   .offer__cont-title h3 {
     text-transform: uppercase;
     font-size: 14px;
-    margin-top: 14px; }
+    margin-top: 14px;
+    margin-bottom: 14px; }
   .offer__cont-input {
     position: relative; }
     .offer__cont-input input {
@@ -1859,9 +1860,10 @@ select:focus {
           position: relative; }
           .create-deal-cont-wrap-main-it-star-sneed {
             position: absolute;
-            left: -20px;
-            top: 50%;
-            transform: translateY(-50%); }
+            left: -15px;
+            top: 45%;
+            transform: translateY(-50%);
+            width: 8px; }
           .create-deal-cont-wrap-main-it-star-morIn {
             position: absolute;
             right: -35px;
@@ -2165,7 +2167,7 @@ select:focus {
             margin-top: 5px;
             font-size: 11px; }
       .create-deal-cont-wrap-main-myprofile {
-        padding-right: 30px; }
+        padding: 0 15px; }
       .create-deal-cont-wrap-main-it-tarrif h4 {
         white-space: nowrap;
         font-size: 12px;
@@ -2184,6 +2186,14 @@ select:focus {
           padding: 5px; }
     .create-deal .p-img-mobile {
       padding: 0 30px 0 18px; } }
+.create-deal-cont-wrap-main-it-star-sneed-p {
+  position: absolute;
+  width: 8px;
+  left: -15px;
+  bottom: 8px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
 .usermap {
   padding: 20px 0; }
   .usermap-cont {
