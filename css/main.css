@@ -764,6 +764,7 @@ img.mfp-img {
   text-transform: uppercase;
   font-size: 14px;
   margin-top: 14px;
+  margin-bottom: 14px;
 }
 
 .offer__cont-input {
@@ -2337,6 +2338,14 @@ img.mfp-img {
   height: auto;
 }
 
+.banner-image {
+  max-width: 150px;
+}
+@media (max-width: 992px) {
+  .banner-image {
+    max-width: 100%;
+  }
+}
 @media (max-width: 992px) {
   .mydeal {
     padding: 20px 10px;
@@ -3253,10 +3262,20 @@ img.mfp-img {
 
 .create-deal-cont-wrap-main-it-star-sneed {
   position: absolute;
-  left: -20px;
-  top: 50%;
+  width: 8px;
+  left: -15px;
+  top: 45%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.create-deal-cont-wrap-main-it-star-sneed-p {
+  position: absolute;
+  width: 8px;
+  left: -15px;
+  bottom: 8px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .create-deal-cont-wrap-main-it-star-morIn {
@@ -3666,8 +3685,7 @@ img.mfp-img {
 
 .create-deal-cont-wrap-main-chat-wrap-msgP-date span {
   font-size: 10px;
-  width: 40px;
-  width: 30px;
+  width: 52px;
   display: block;
   margin-right: auto;
 }
@@ -3742,7 +3760,7 @@ img.mfp-img {
     font-size: 11px;
   }
   .create-deal-cont-wrap-main-myprofile {
-    padding-right: 30px;
+    padding: 0 15px;
   }
   .create-deal-cont-wrap-main-it-tarrif h4 {
     white-space: nowrap;
@@ -5297,6 +5315,12 @@ img.mfp-img {
 .mainsearch-cont.mainpage .mainsearch-cont-banner {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
+}
+
+@media (max-width: 992px) {
+  .bannerNone {
+    display: none;
+  }
 }
 
 .fast-serch {
